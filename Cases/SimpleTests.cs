@@ -22,6 +22,7 @@ namespace Tdms.Automatic.Ui.Tests.Cases
         [Fact]
         public void LoginTest()
         {
+            //тест
             Login("SYSADMIN", "Tdm365");
             Application.Header.UserButton.Click();
             var contextMenu = Context.GetComponent<ContextMenuComponent>().Build();
