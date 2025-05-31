@@ -2,8 +2,8 @@
 using Bismuthum.Core.Implementations;
 using Bismuthum.Core.Interfaces;
 using OpenQA.Selenium.Chrome;
-using Tdms.Automatic.Ui.Components.Implementations.Abstractions;
-using Tdms.Automatic.Ui.Components.Implementations.Application;
+using Tdms.Ui.Test.Components.Implementations.Abstractions;
+using Tdms.Ui.Test.Components.Implementations.Application;
 using IWebDriver = OpenQA.Selenium.IWebDriver;
 
 namespace Tdms.Automatic.Ui.Tests

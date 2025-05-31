@@ -1,0 +1,12 @@
+{
+  "uuid": "caff0e2b-54d5-44f0-ac03-20d5008da3fc",
+  "name": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests",
+  "children": [
+    "f62d2e81-3953-4b71-a9d5-751742f67467"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748674227343,
+  "stop": 1748674232952
+}

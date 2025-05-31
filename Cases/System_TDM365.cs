@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tdms.Automatic.Ui.Components.Extensions;
-using Tdms.Automatic.Ui.Components.Implementations;
-using Tdms.Automatic.Ui.Components.Implementations.Abstractions;
-using Tdms.Automatic.Ui.Components.Implementations.Application;
-using Tdms.Automatic.Ui.Components.Implementations.ObjectDescription;
-using Tdms.Automatic.Ui.Components.Implementations.Table;
-using Tdms.Automatic.Ui.Components.Implementations.TreeView;
+using Tdms.Ui.Test.Components.Extensions;
+using Tdms.Ui.Test.Components.Implementations;
+using Tdms.Ui.Test.Components.Implementations.Abstractions;
+using Tdms.Ui.Test.Components.Implementations.Application;
+using Tdms.Ui.Test.Components.Implementations.ObjectDescription;
+using Tdms.Ui.Test.Components.Implementations.Table;
+using Tdms.Ui.Test.Components.Implementations.TreeView;
 
-namespace Tdms.Automatic.Ui.Components.Implementations.Application
+namespace Tdms.Ui.Test.Components.Implementations.Application
 {
     public static class ApplicationHeaderExtensions
     {
@@ -22,6 +22,8 @@ namespace Tdms.Automatic.Ui.Components.Implementations.Application
         private static readonly Description _chatButtonDescription = new(Selector.Css("*[id='chat-tab']"), "Chat Button");
 
         private static readonly Description _helpButtonDescription = new(Selector.Css("*[id='help-tab']"), "Help Button");
+
+        private static readonly Description _administratorButtonDescription = new(Selector.Css("*[id='administrator-tab']"), "Administrator Button");
 
         public static ButtonComponent GetLogoButton(this ApplicationHeaderComponent header)
         {
@@ -36,6 +38,11 @@ namespace Tdms.Automatic.Ui.Components.Implementations.Application
         public static ButtonComponent GetHelpButton(this ApplicationHeaderComponent header)
         {
             return header.GetComponent<ButtonComponent>().WithDescription(_helpButtonDescription).Build();
+        }
+
+        public static ButtonComponent GetAdministratorButton(this ApplicationHeaderComponent header)
+        {
+            return header.GetComponent<ButtonComponent>().WithDescription(_administratorButtonDescription).Build();
         }
     }
 }
