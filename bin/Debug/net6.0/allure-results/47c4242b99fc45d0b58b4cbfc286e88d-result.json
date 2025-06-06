@@ -1,0 +1,810 @@
+{
+  "uuid": "d8ad64ab-91a4-49ea-9e77-7eb697e65d23",
+  "historyId": "a82d02e93096f8574c2c35c35ec74de6",
+  "testCaseId": "b8fec0c67d7e77cd59d3cc86bbe2bece",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.HeadersTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.HeadersTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Разделы"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Разделы"
+    },
+    {
+      "name": "tag",
+      "value": "Панели"
+    },
+    {
+      "name": "tag",
+      "value": "Рабочий стол"
+    },
+    {
+      "name": "tag",
+      "value": "Объекты"
+    },
+    {
+      "name": "tag",
+      "value": "Почта"
+    },
+    {
+      "name": "tag",
+      "value": "Совещания"
+    },
+    {
+      "name": "tag",
+      "value": "Справка"
+    },
+    {
+      "name": "tag",
+      "value": "О программе"
+    },
+    {
+      "name": "tag",
+      "value": "Сменить пароль"
+    },
+    {
+      "name": "tag",
+      "value": "Настройки"
+    },
+    {
+      "name": "tag",
+      "value": "Интерфейс"
+    },
+    {
+      "name": "tag",
+      "value": "Уведомления"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.HeadersTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "Открытие основных разделов TDM365 и выполнение каждой команды из меню пользователя",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946786090,
+          "stop": 1748946786156
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946786156,
+          "stop": 1748946786195
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946786195,
+          "stop": 1748946786247
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1748946785728,
+      "stop": 1748946786247
+    },
+    {
+      "name": "1. Переход в раздел \"Панели\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Logo Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946786247,
+          "stop": 1748946786869
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Панели\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1748946786247,
+      "stop": 1748946786870
+    },
+    {
+      "name": "2. Переход в раздел \"Рабочий стол\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Desktop Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946786870,
+          "stop": 1748946787031
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Рабочий стол\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1748946786870,
+      "stop": 1748946787031
+    },
+    {
+      "name": "3. Переход в раздел \"Объекты\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Objects Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946787031,
+          "stop": 1748946787169
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Объекты\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1748946787031,
+      "stop": 1748946787169
+    },
+    {
+      "name": "4. Переход в раздел \"Почта\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Mail Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946787169,
+          "stop": 1748946787366
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Почта\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "4",
+          "excluded": false
+        }
+      ],
+      "start": 1748946787169,
+      "stop": 1748946787366
+    },
+    {
+      "name": "5. Переход в раздел \"Совещания\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Chat Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946787366,
+          "stop": 1748946787566
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Совещания\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "5",
+          "excluded": false
+        }
+      ],
+      "start": 1748946787366,
+      "stop": 1748946787566
+    },
+    {
+      "name": "6. Переход в раздел \"Справка\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Help Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946787567,
+          "stop": 1748946787859
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Справка\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "6",
+          "excluded": false
+        }
+      ],
+      "start": 1748946787566,
+      "stop": 1748946787859
+    },
+    {
+      "name": "7. Уведомления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Messages Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946787860,
+          "stop": 1748946788142
+        },
+        {
+          "name": "Click on the \"Dialog  -> Header  -> Close Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788142,
+          "stop": 1748946788215
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "7",
+          "excluded": false
+        }
+      ],
+      "start": 1748946787859,
+      "stop": 1748946788215
+    },
+    {
+      "name": "8. Команда пользователя - \"О программе\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788216,
+          "stop": 1748946788283
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == О программе]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788283,
+          "stop": 1748946788420
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788420,
+          "stop": 1748946788509
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"О программе\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "8",
+          "excluded": false
+        }
+      ],
+      "start": 1748946788215,
+      "stop": 1748946788509
+    },
+    {
+      "name": "9. Команда пользователя - \"Сменить пароль\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788510,
+          "stop": 1748946788565
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Сменить пароль]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788565,
+          "stop": 1748946788630
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788630,
+          "stop": 1748946788729
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Сменить пароль\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "9",
+          "excluded": false
+        }
+      ],
+      "start": 1748946788510,
+      "stop": 1748946788729
+    },
+    {
+      "name": "10. Команда пользователя - \"Настройки\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788729,
+          "stop": 1748946788782
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788782,
+          "stop": 1748946788859
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788860,
+          "stop": 1748946788982
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Настройки\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "10",
+          "excluded": false
+        }
+      ],
+      "start": 1748946788729,
+      "stop": 1748946788982
+    },
+    {
+      "name": "11. Команда пользователя - \"Интерфейс\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946788982,
+          "stop": 1748946789039
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Интерфейс]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946789040,
+          "stop": 1748946789141
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946789141,
+          "stop": 1748946789230
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Интерфейс\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "11",
+          "excluded": false
+        }
+      ],
+      "start": 1748946788982,
+      "stop": 1748946789230
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1748946785728,
+  "stop": 1748946789419
+}

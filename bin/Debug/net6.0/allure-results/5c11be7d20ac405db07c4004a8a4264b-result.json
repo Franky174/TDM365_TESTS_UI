@@ -1,8 +1,8 @@
 {
-  "uuid": "0e7503c9-f76e-47e1-976d-a9dc3331780b",
-  "historyId": "6fc7c5cc459a83462991bb970ea3fc7f",
-  "testCaseId": "f39a314d0900d16a4ba2a210bcfe6a18",
-  "fullName": "TDM365_TESTS_UI:Tdms.Automatic.Ui.Tests.Cases.SimpleTests.HeadersTest()",
+  "uuid": "433e723b-6d7f-4e47-9e2a-f0db65060a20",
+  "historyId": "a82d02e93096f8574c2c35c35ec74de6",
+  "testCaseId": "b8fec0c67d7e77cd59d3cc86bbe2bece",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.HeadersTest()",
   "labels": [
     {
       "name": "thread",
@@ -22,19 +22,87 @@
     },
     {
       "name": "testClass",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests"
+      "value": "TDM365.UI.Tests"
     },
     {
       "name": "testMethod",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests.HeadersTest"
+      "value": "TDM365.UI.Tests.HeadersTest"
     },
     {
       "name": "package",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests"
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Разделы"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Разделы"
+    },
+    {
+      "name": "tag",
+      "value": "Панели"
+    },
+    {
+      "name": "tag",
+      "value": "Рабочий стол"
+    },
+    {
+      "name": "tag",
+      "value": "Объекты"
+    },
+    {
+      "name": "tag",
+      "value": "Почта"
+    },
+    {
+      "name": "tag",
+      "value": "Совещания"
+    },
+    {
+      "name": "tag",
+      "value": "Справка"
+    },
+    {
+      "name": "tag",
+      "value": "О программе"
+    },
+    {
+      "name": "tag",
+      "value": "Сменить пароль"
+    },
+    {
+      "name": "tag",
+      "value": "Настройки"
+    },
+    {
+      "name": "tag",
+      "value": "Интерфейс"
+    },
+    {
+      "name": "tag",
+      "value": "Уведомления"
     }
   ],
   "links": [],
-  "name": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests.HeadersTest",
+  "name": "TDM365.UI.Tests.HeadersTest",
   "status": "passed",
   "statusDetails": {
     "known": false,
@@ -43,6 +111,7 @@
     "message": ""
   },
   "stage": "finished",
+  "description": "Открытие основных разделов TDM365 и выполнение каждой команды из меню пользователя",
   "steps": [
     {
       "name": "0. Авторизация пользователя \"SYSADMIN\"",
@@ -66,8 +135,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674209603,
-          "stop": 1748674209675
+          "start": 1748981508751,
+          "stop": 1748981508820
         },
         {
           "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
@@ -81,8 +150,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674209676,
-          "stop": 1748674209723
+          "start": 1748981508820,
+          "stop": 1748981508861
         },
         {
           "name": "Click on the \"Кнопка \"",
@@ -96,8 +165,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674209723,
-          "stop": 1748674209780
+          "start": 1748981508861,
+          "stop": 1748981508918
         }
       ],
       "attachments": [],
@@ -113,8 +182,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674209289,
-      "stop": 1748674209780
+      "start": 1748981508380,
+      "stop": 1748981508918
     },
     {
       "name": "1. Переход в раздел \"Панели\"",
@@ -138,8 +207,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674209782,
-          "stop": 1748674210408
+          "start": 1748981508918,
+          "stop": 1748981509564
         }
       ],
       "attachments": [],
@@ -155,8 +224,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674209781,
-      "stop": 1748674210409
+      "start": 1748981508918,
+      "stop": 1748981509564
     },
     {
       "name": "2. Переход в раздел \"Рабочий стол\"",
@@ -180,8 +249,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674210412,
-          "stop": 1748674210512
+          "start": 1748981509564,
+          "stop": 1748981509724
         }
       ],
       "attachments": [],
@@ -197,8 +266,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674210409,
-      "stop": 1748674210512
+      "start": 1748981509564,
+      "stop": 1748981509724
     },
     {
       "name": "3. Переход в раздел \"Объекты\"",
@@ -222,8 +291,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674210512,
-          "stop": 1748674210608
+          "start": 1748981509724,
+          "stop": 1748981509867
         }
       ],
       "attachments": [],
@@ -239,8 +308,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674210512,
-      "stop": 1748674210608
+      "start": 1748981509724,
+      "stop": 1748981509867
     },
     {
       "name": "4. Переход в раздел \"Почта\"",
@@ -264,8 +333,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674210608,
-          "stop": 1748674210785
+          "start": 1748981509867,
+          "stop": 1748981510063
         }
       ],
       "attachments": [],
@@ -281,8 +350,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674210608,
-      "stop": 1748674210785
+      "start": 1748981509867,
+      "stop": 1748981510063
     },
     {
       "name": "5. Переход в раздел \"Совещания\"",
@@ -306,8 +375,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674210785,
-          "stop": 1748674210949
+          "start": 1748981510063,
+          "stop": 1748981510279
         }
       ],
       "attachments": [],
@@ -323,8 +392,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674210785,
-      "stop": 1748674210949
+      "start": 1748981510063,
+      "stop": 1748981510279
     },
     {
       "name": "6. Переход в раздел \"Справка\"",
@@ -348,8 +417,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674210950,
-          "stop": 1748674211198
+          "start": 1748981510279,
+          "stop": 1748981510527
         }
       ],
       "attachments": [],
@@ -365,8 +434,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674210950,
-      "stop": 1748674211198
+      "start": 1748981510279,
+      "stop": 1748981510528
     },
     {
       "name": "7. Уведомления",
@@ -390,8 +459,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211199,
-          "stop": 1748674211472
+          "start": 1748981510528,
+          "stop": 1748981510825
         },
         {
           "name": "Click on the \"Dialog  -> Header  -> Close Button \"",
@@ -405,8 +474,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211476,
-          "stop": 1748674211545
+          "start": 1748981510825,
+          "stop": 1748981510893
         }
       ],
       "attachments": [],
@@ -422,8 +491,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674211199,
-      "stop": 1748674211545
+      "start": 1748981510528,
+      "stop": 1748981510893
     },
     {
       "name": "8. Команда пользователя - \"О программе\"",
@@ -447,8 +516,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211546,
-          "stop": 1748674211613
+          "start": 1748981510894,
+          "stop": 1748981510959
         },
         {
           "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == О программе]\"",
@@ -462,8 +531,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211615,
-          "stop": 1748674211755
+          "start": 1748981510959,
+          "stop": 1748981511092
         },
         {
           "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
@@ -477,8 +546,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211755,
-          "stop": 1748674211839
+          "start": 1748981511092,
+          "stop": 1748981511177
         }
       ],
       "attachments": [],
@@ -499,8 +568,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674211546,
-      "stop": 1748674211839
+      "start": 1748981510893,
+      "stop": 1748981511177
     },
     {
       "name": "9. Команда пользователя - \"Сменить пароль\"",
@@ -524,8 +593,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211839,
-          "stop": 1748674211894
+          "start": 1748981511177,
+          "stop": 1748981511233
         },
         {
           "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Сменить пароль]\"",
@@ -539,8 +608,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211894,
-          "stop": 1748674211963
+          "start": 1748981511233,
+          "stop": 1748981511298
         },
         {
           "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
@@ -554,8 +623,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674211964,
-          "stop": 1748674212052
+          "start": 1748981511298,
+          "stop": 1748981511383
         }
       ],
       "attachments": [],
@@ -576,8 +645,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674211839,
-      "stop": 1748674212052
+      "start": 1748981511177,
+      "stop": 1748981511383
     },
     {
       "name": "10. Команда пользователя - \"Настройки\"",
@@ -601,8 +670,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674212053,
-          "stop": 1748674212105
+          "start": 1748981511383,
+          "stop": 1748981511436
         },
         {
           "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]\"",
@@ -616,8 +685,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674212105,
-          "stop": 1748674212179
+          "start": 1748981511436,
+          "stop": 1748981511509
         },
         {
           "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
@@ -631,8 +700,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674212179,
-          "stop": 1748674212299
+          "start": 1748981511510,
+          "stop": 1748981511650
         }
       ],
       "attachments": [],
@@ -653,8 +722,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674212053,
-      "stop": 1748674212300
+      "start": 1748981511383,
+      "stop": 1748981511650
     },
     {
       "name": "11. Команда пользователя - \"Интерфейс\"",
@@ -678,8 +747,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674212300,
-          "stop": 1748674212358
+          "start": 1748981511650,
+          "stop": 1748981511704
         },
         {
           "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Интерфейс]\"",
@@ -693,8 +762,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674212358,
-          "stop": 1748674212471
+          "start": 1748981511704,
+          "stop": 1748981511805
         },
         {
           "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
@@ -708,8 +777,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674212471,
-          "stop": 1748674212560
+          "start": 1748981511805,
+          "stop": 1748981511895
         }
       ],
       "attachments": [],
@@ -730,12 +799,12 @@
           "excluded": false
         }
       ],
-      "start": 1748674212300,
-      "stop": 1748674212560
+      "start": 1748981511650,
+      "stop": 1748981511895
     }
   ],
   "attachments": [],
   "parameters": [],
-  "start": 1748674209263,
-  "stop": 1748674212716
+  "start": 1748981508380,
+  "stop": 1748981512023
 }

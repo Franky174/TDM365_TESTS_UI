@@ -1,8 +1,8 @@
 {
-  "uuid": "7e370f09-d3d4-4c67-998a-55ba0e0ef573",
-  "historyId": "3b5739e003a1c3262542dfeeb7847f45",
-  "testCaseId": "98473bedbcb5f5390d12da3aab5e4ff8",
-  "fullName": "TDM365_TESTS_UI:Tdms.Automatic.Ui.Tests.Cases.SimpleTests.PanelTest()",
+  "uuid": "d5d0f728-4ded-488e-ac87-ea081e1655f4",
+  "historyId": "da4d70340f88332c42d155d55d839789",
+  "testCaseId": "5d45e661520b9daed1ed6ebb8837926e",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.PanelTest()",
   "labels": [
     {
       "name": "thread",
@@ -22,27 +22,85 @@
     },
     {
       "name": "testClass",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests"
+      "value": "TDM365.UI.Tests"
     },
     {
       "name": "testMethod",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests.PanelTest"
+      "value": "TDM365.UI.Tests.PanelTest"
     },
     {
       "name": "package",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests"
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Панели"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Панели"
+    },
+    {
+      "name": "tag",
+      "value": "Стартовая страница"
+    },
+    {
+      "name": "tag",
+      "value": "Задачи"
+    },
+    {
+      "name": "tag",
+      "value": "Журнал сервера"
+    },
+    {
+      "name": "tag",
+      "value": "Журнал событий"
+    },
+    {
+      "name": "tag",
+      "value": "Журнал уведомлений"
+    },
+    {
+      "name": "tag",
+      "value": "Проекты"
+    },
+    {
+      "name": "tag",
+      "value": "Планирование"
+    },
+    {
+      "name": "tag",
+      "value": "Закрыть панель"
     }
   ],
   "links": [],
-  "name": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests.PanelTest",
-  "status": "passed",
+  "name": "TDM365.UI.Tests.PanelTest",
+  "status": "failed",
   "statusDetails": {
     "known": false,
     "muted": false,
     "flaky": false,
-    "message": ""
+    "message": "Недоступна команда Закрыть панель",
+    "trace": "   at Xunit.Assert.True(Nullable`1 condition, String userMessage) in /_/src/xunit.assert/Asserts/BooleanAsserts.cs:line 141\r\n   at Xunit.Assert.True(Boolean condition, String userMessage) in /_/src/xunit.assert/Asserts/BooleanAsserts.cs:line 123\r\n   at TDM365.UI.Tests.__a$_around_PanelCommand_100663312_o(String Command, String PanelName, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 301\r\n   at TDM365.UI.Tests.__a$_around_PanelCommand_100663312_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
   },
   "stage": "finished",
+  "description": "В разделе панелей открываются все панели и закрываются",
   "steps": [
     {
       "name": "0. Авторизация пользователя \"SYSADMIN\"",
@@ -66,8 +124,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674059550,
-          "stop": 1748674059619
+          "start": 1748981457664,
+          "stop": 1748981457746
         },
         {
           "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
@@ -81,8 +139,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674059619,
-          "stop": 1748674059670
+          "start": 1748981457746,
+          "stop": 1748981457786
         },
         {
           "name": "Click on the \"Кнопка \"",
@@ -96,8 +154,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674059671,
-          "stop": 1748674059731
+          "start": 1748981457787,
+          "stop": 1748981457841
         }
       ],
       "attachments": [],
@@ -113,8 +171,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674059227,
-      "stop": 1748674059731
+      "start": 1748981457364,
+      "stop": 1748981457841
     },
     {
       "name": "1. Переход в раздел \"Панели\"",
@@ -138,8 +196,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674059732,
-          "stop": 1748674060358
+          "start": 1748981457843,
+          "stop": 1748981458434
         }
       ],
       "attachments": [],
@@ -155,8 +213,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674059732,
-      "stop": 1748674060358
+      "start": 1748981457842,
+      "stop": 1748981458434
     },
     {
       "name": "2. Команда контекстного меню в панели \"TDM365\" - \"TDM365\"",
@@ -180,8 +238,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674061492,
-          "stop": 1748674061644
+          "start": 1748981459678,
+          "stop": 1748981459824
         }
       ],
       "attachments": [],
@@ -202,8 +260,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674060358,
-      "stop": 1748674061644
+      "start": 1748981458435,
+      "stop": 1748981459824
     },
     {
       "name": "3. Команда контекстного меню в панели \"TDM365\" - \"Задачи\"",
@@ -227,8 +285,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674062634,
-          "stop": 1748674062724
+          "start": 1748981460812,
+          "stop": 1748981460904
         }
       ],
       "attachments": [],
@@ -249,8 +307,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674061644,
-      "stop": 1748674062724
+      "start": 1748981459824,
+      "stop": 1748981460904
     },
     {
       "name": "4. Команда контекстного меню в панели \"FORM_PANEL_SPD\" - \"Журнал сервера\"",
@@ -274,8 +332,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674064348,
-          "stop": 1748674064588
+          "start": 1748981462348,
+          "stop": 1748981462480
         }
       ],
       "attachments": [],
@@ -296,8 +354,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674062724,
-      "stop": 1748674064588
+      "start": 1748981460905,
+      "stop": 1748981462480
     },
     {
       "name": "5. Команда контекстного меню в панели \"FORM_SERVER_LOG\" - \"Журнал событий\"",
@@ -321,8 +379,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674066800,
-          "stop": 1748674067087
+          "start": 1748981464436,
+          "stop": 1748981464629
         }
       ],
       "attachments": [],
@@ -343,8 +401,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674064588,
-      "stop": 1748674067087
+      "start": 1748981462480,
+      "stop": 1748981464629
     },
     {
       "name": "6. Команда контекстного меню в панели \"FORM_EVENTS_LOG\" - \"Журнал уведомлений\"",
@@ -368,8 +426,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674069808,
-          "stop": 1748674070169
+          "start": 1748981467106,
+          "stop": 1748981467376
         }
       ],
       "attachments": [],
@@ -390,8 +448,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674067087,
-      "stop": 1748674070170
+      "start": 1748981464629,
+      "stop": 1748981467376
     },
     {
       "name": "7. Команда контекстного меню в панели \"FORM_NOTIFICATIONS_HISTORY\" - \"Проекты\"",
@@ -415,8 +473,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674074150,
-          "stop": 1748674074818
+          "start": 1748981470214,
+          "stop": 1748981470390
         }
       ],
       "attachments": [],
@@ -437,8 +495,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674070170,
-      "stop": 1748674074818
+      "start": 1748981467376,
+      "stop": 1748981470390
     },
     {
       "name": "8. Команда контекстного меню в панели \"FORM_PANEL_PROJECTS\" - \"Планирование\"",
@@ -462,8 +520,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674080218,
-          "stop": 1748674080922
+          "start": 1748981473700,
+          "stop": 1748981473888
         }
       ],
       "attachments": [],
@@ -484,8 +542,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674074818,
-      "stop": 1748674080922
+      "start": 1748981470390,
+      "stop": 1748981473888
     },
     {
       "name": "9. Команда контекстного меню в панели \"TDM365\" - \"Закрыть панель\"",
@@ -509,8 +567,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674084213,
-          "stop": 1748674084712
+          "start": 1748981475240,
+          "stop": 1748981475363
         }
       ],
       "attachments": [],
@@ -531,8 +589,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674080923,
-      "stop": 1748674084712
+      "start": 1748981473889,
+      "stop": 1748981475363
     },
     {
       "name": "10. Команда контекстного меню в панели \"FORM_PANEL_SPD\" - \"Закрыть панель\"",
@@ -556,8 +614,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674086555,
-          "stop": 1748674087004
+          "start": 1748981476425,
+          "stop": 1748981476505
         }
       ],
       "attachments": [],
@@ -578,8 +636,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674084712,
-      "stop": 1748674087004
+      "start": 1748981475363,
+      "stop": 1748981476505
     },
     {
       "name": "11. Команда контекстного меню в панели \"FORM_SERVER_LOG\" - \"Закрыть панель\"",
@@ -603,8 +661,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674088667,
-          "stop": 1748674089140
+          "start": 1748981477589,
+          "stop": 1748981477679
         }
       ],
       "attachments": [],
@@ -625,8 +683,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674087004,
-      "stop": 1748674089140
+      "start": 1748981476506,
+      "stop": 1748981477679
     },
     {
       "name": "12. Команда контекстного меню в панели \"FORM_EVENTS_LOG\" - \"Закрыть панель\"",
@@ -650,8 +708,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674090579,
-          "stop": 1748674090706
+          "start": 1748981478650,
+          "stop": 1748981478719
         }
       ],
       "attachments": [],
@@ -672,8 +730,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674089140,
-      "stop": 1748674090706
+      "start": 1748981477679,
+      "stop": 1748981478719
     },
     {
       "name": "13. Команда контекстного меню в панели \"FORM_NOTIFICATIONS_HISTORY\" - \"Закрыть панель\"",
@@ -697,8 +755,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674092363,
-          "stop": 1748674092482
+          "start": 1748981479689,
+          "stop": 1748981479753
         }
       ],
       "attachments": [],
@@ -719,42 +777,11 @@
           "excluded": false
         }
       ],
-      "start": 1748674090706,
-      "stop": 1748674092482
+      "start": 1748981478719,
+      "stop": 1748981479753
     },
     {
       "name": "14. Команда контекстного меню в панели \"FORM_PANEL_PROJECTS\" - \"Закрыть панель\"",
-      "status": "passed",
-      "statusDetails": {
-        "known": false,
-        "muted": false,
-        "flaky": false
-      },
-      "stage": "finished",
-      "steps": [],
-      "attachments": [],
-      "parameters": [
-        {
-          "name": "Command",
-          "value": "\"Закрыть панель\"",
-          "excluded": false
-        },
-        {
-          "name": "PanelName",
-          "value": "\"FORM_PANEL_PROJECTS\"",
-          "excluded": false
-        },
-        {
-          "name": "index",
-          "value": "14",
-          "excluded": false
-        }
-      ],
-      "start": 1748674092482,
-      "stop": 1748674093614
-    },
-    {
-      "name": "15. Команда контекстного меню в панели \"FORM_PANEL_PLANNING\" - \"Закрыть панель\"",
       "status": "passed",
       "statusDetails": {
         "known": false,
@@ -775,10 +802,43 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674094925,
-          "stop": 1748674094987
+          "start": 1748981480666,
+          "stop": 1748981480720
         }
       ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_PANEL_PROJECTS\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "14",
+          "excluded": false
+        }
+      ],
+      "start": 1748981479753,
+      "stop": 1748981480720
+    },
+    {
+      "name": "15. Команда контекстного меню в панели \"FORM_PANEL_PLANNING\" - \"Закрыть панель\"",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Недоступна команда Закрыть панель",
+        "trace": "Xunit.Sdk.TrueException: Недоступна команда Закрыть панель\r\n   at Xunit.Assert.True(Nullable`1 condition, String userMessage) in /_/src/xunit.assert/Asserts/BooleanAsserts.cs:line 141\r\n   at Xunit.Assert.True(Boolean condition, String userMessage) in /_/src/xunit.assert/Asserts/BooleanAsserts.cs:line 123\r\n   at TDM365.UI.Tests.__a$_around_PanelCommand_100663312_o(String Command, String PanelName, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 301\r\n   at TDM365.UI.Tests.__a$_around_PanelCommand_100663312_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
       "attachments": [],
       "parameters": [
         {
@@ -797,12 +857,12 @@
           "excluded": false
         }
       ],
-      "start": 1748674093614,
-      "stop": 1748674094987
+      "start": 1748981480720,
+      "stop": 1748981482149
     }
   ],
   "attachments": [],
   "parameters": [],
-  "start": 1748674059227,
-  "stop": 1748674095194
+  "start": 1748981457343,
+  "stop": 1748981482335
 }

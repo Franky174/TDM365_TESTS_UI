@@ -1,6 +1,8 @@
 ﻿using System;
+using System.IO;
 using Bismuthum.Core.Implementations;
 using Bismuthum.Core.Interfaces;
+using OpenQA.Selenium.BiDi.Modules.Session;
 using OpenQA.Selenium.Chrome;
 using Tdms.Ui.Test.Components.Implementations.Abstractions;
 using Tdms.Ui.Test.Components.Implementations.Application;
@@ -50,10 +52,25 @@ namespace Tdms.Automatic.Ui.Tests
 
         protected virtual IWebDriver GetDriver()
         {
-            var driver = new ChromeDriver();
+            ChromeOptions options = new();
 
+            // Настройка пути к профилю текущего пользователя
+            //string userDataDir = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            //string chromeUserDataDir = Path.Combine(userDataDir, @"AppData\Local\Google\Chrome\User Data");
+            //options.AddArguments($"user-data-dir={chromeUserDataDir}");
+            //options.AddArguments("profile-directory=Default");
+            //options.AddArgument("--no-sandbox");
+
+            options.AddArguments("--disable-notifications");
+            options.AddExcludedArgument("enable-automation");
+            options.AddArguments("--disable-infobars");
+            options.AddArguments("--incognito");
+
+            var driver = new ChromeDriver(options);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl(PageAddress);
+            //Изменение масштаба страницы 
+            //((OpenQA.Selenium.IJavaScriptExecutor)driver).ExecuteScript("document.body.style.zoom='80%'");
 
             return driver;
         }

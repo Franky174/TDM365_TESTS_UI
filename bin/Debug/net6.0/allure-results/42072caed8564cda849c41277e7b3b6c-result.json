@@ -1,0 +1,370 @@
+{
+  "uuid": "24fa4f75-97a3-44ac-8462-0abce03ae982",
+  "historyId": "389efca429f3532bce61a0fd0a0c02b7",
+  "testCaseId": "94cf6f7a774f194142026b41378c6929",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.TdmsUtilities()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.TdmsUtilities"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "tag",
+      "value": "Утилиты TDMS"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.TdmsUtilities",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "Запуск команды меню администратора - Утилиты TDMS",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946768374,
+          "stop": 1748946768439
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946768439,
+          "stop": 1748946768479
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946768479,
+          "stop": 1748946768531
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1748946768014,
+      "stop": 1748946768531
+    },
+    {
+      "name": "1. Команда администратора - \"Утилиты TDMS\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Toolbar [Is displayed == True] -> Button [Data Reference == global-commands-popup]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946769095,
+          "stop": 1748946769179
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Data Reference == SUB_SYSADMIN]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946769224,
+          "stop": 1748946769276
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Утилиты TDMS]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946769517,
+          "stop": 1748946769780
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Утилиты TDMS\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1748946768532,
+      "stop": 1748946772378
+    },
+    {
+      "name": "2. Установка значения поля \"ATTR_CODE\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"info\" keys to the \"Dialog [Has Text == True] AND [Text == Утилиты TDMS] -> Body  -> Input Component [System Identifier == ATTR_CODE] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946772437,
+          "stop": 1748946772507
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogName",
+          "value": "\"Утилиты TDMS\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"ATTR_CODE\"",
+          "excluded": false
+        },
+        {
+          "name": "Value",
+          "value": "\"info\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1748946772379,
+      "stop": 1748946772507
+    },
+    {
+      "name": "3. Запрос диалога по нажатию кнопки \"BUTTON_SEND\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Утилиты TDMS] -> Body  -> Button [System Identifier == BUTTON_SEND]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748946772557,
+          "stop": 1748946772626
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogMainName",
+          "value": "\"Утилиты TDMS\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"BUTTON_SEND\"",
+          "excluded": false
+        },
+        {
+          "name": "DialogName",
+          "value": "\"\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1748946772507,
+      "stop": 1748946772626
+    },
+    {
+      "name": "4. Проверка поля \"ATTR_NAME\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogName",
+          "value": "\"Утилиты TDMS\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"ATTR_NAME\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "4",
+          "excluded": false
+        }
+      ],
+      "start": 1748946772627,
+      "stop": 1748946772850
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1748946768014,
+  "stop": 1748946772992
+}

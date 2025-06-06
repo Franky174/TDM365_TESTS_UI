@@ -1,0 +1,467 @@
+{
+  "uuid": "330197e1-9637-4700-a893-d76b8111708a",
+  "historyId": "4908140fc9a642fc9ec520cab57d79c1",
+  "testCaseId": "fe5a6d48f95fa7ab2de7b8909006618d",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.SystemInfo()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.SystemInfo"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "tag",
+      "value": "Информация о системе"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.SystemInfo",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "Запуск команды меню администратора - Информация о системе",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981497984,
+          "stop": 1748981498052
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981498052,
+          "stop": 1748981498092
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981498092,
+          "stop": 1748981498144
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1748981497627,
+      "stop": 1748981498144
+    },
+    {
+      "name": "1. Команда администратора - \"Информация о системе\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Toolbar [Is displayed == True] -> Button [Data Reference == global-commands-popup]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981498733,
+          "stop": 1748981498813
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Data Reference == SUB_SYSADMIN]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981498856,
+          "stop": 1748981498910
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Информация о системе]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981498967,
+          "stop": 1748981499049
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Информация о системе\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1748981498144,
+      "stop": 1748981501633
+    },
+    {
+      "name": "2. Запрос диалога по нажатию кнопки \"BUTTON_CHANGE_LOG_SERVER\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Информация о системе] -> Body  -> Button [System Identifier == BUTTON_CHANGE_LOG_SERVER]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981501691,
+          "stop": 1748981501768
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == TDM365] -> Header  -> Close Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981501926,
+          "stop": 1748981502009
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogMainName",
+          "value": "\"Информация о системе\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"BUTTON_CHANGE_LOG_SERVER\"",
+          "excluded": false
+        },
+        {
+          "name": "DialogName",
+          "value": "\"TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1748981501633,
+      "stop": 1748981502010
+    },
+    {
+      "name": "3. Запрос диалога по нажатию кнопки \"BUTTON_CHANGE_LOG_TDM\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Информация о системе] -> Body  -> Button [System Identifier == BUTTON_CHANGE_LOG_TDM]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981502068,
+          "stop": 1748981502137
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == TDM365] -> Header  -> Close Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1748981502332,
+          "stop": 1748981502406
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogMainName",
+          "value": "\"Информация о системе\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"BUTTON_CHANGE_LOG_TDM\"",
+          "excluded": false
+        },
+        {
+          "name": "DialogName",
+          "value": "\"TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1748981502010,
+      "stop": 1748981502406
+    },
+    {
+      "name": "4. Проверка поля \"VER_SERVER\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogName",
+          "value": "\"Информация о системе\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"VER_SERVER\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "4",
+          "excluded": false
+        }
+      ],
+      "start": 1748981502406,
+      "stop": 1748981502502
+    },
+    {
+      "name": "5. Проверка поля \"VER_TDM365\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogName",
+          "value": "\"Информация о системе\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"VER_TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "5",
+          "excluded": false
+        }
+      ],
+      "start": 1748981502502,
+      "stop": 1748981502589
+    },
+    {
+      "name": "6. Проверка поля \"BD_PATH\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogName",
+          "value": "\"Информация о системе\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"BD_PATH\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "6",
+          "excluded": false
+        }
+      ],
+      "start": 1748981502589,
+      "stop": 1748981502686
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1748981497627,
+  "stop": 1748981502823
+}

@@ -1,8 +1,8 @@
 {
-  "uuid": "6635a5c1-279a-4632-b3b9-0b9aead80b4d",
-  "historyId": "73101817a7387e94cfcc00e5268c137f",
-  "testCaseId": "629f9603abc71bc76830002b10d4ee9b",
-  "fullName": "TDM365_TESTS_UI:Tdms.Automatic.Ui.Tests.Cases.SimpleTests.LoginTest()",
+  "uuid": "3f855db9-cccc-4010-abc6-3c18526ac716",
+  "historyId": "60538217ed1694cb1ceac59b56fc785a",
+  "testCaseId": "9a120a780e800d96462a4e72b17e3a5d",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.LoginTest()",
   "labels": [
     {
       "name": "thread",
@@ -22,19 +22,39 @@
     },
     {
       "name": "testClass",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests"
+      "value": "TDM365.UI.Tests"
     },
     {
       "name": "testMethod",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests.LoginTest"
+      "value": "TDM365.UI.Tests.LoginTest"
     },
     {
       "name": "package",
-      "value": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests"
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Выход из системы"
     }
   ],
   "links": [],
-  "name": "Tdms.Automatic.Ui.Tests.Cases.SimpleTests.LoginTest",
+  "name": "TDM365.UI.Tests.LoginTest",
   "status": "passed",
   "statusDetails": {
     "known": false,
@@ -43,6 +63,7 @@
     "message": ""
   },
   "stage": "finished",
+  "description": "Авторизация пользователя в системе и выход из системы",
   "steps": [
     {
       "name": "0. Авторизация пользователя \"SYSADMIN\"",
@@ -66,8 +87,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674225997,
-          "stop": 1748674226075
+          "start": 1748946782618,
+          "stop": 1748946782687
         },
         {
           "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
@@ -81,8 +102,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674226075,
-          "stop": 1748674226127
+          "start": 1748946782687,
+          "stop": 1748946782731
         },
         {
           "name": "Click on the \"Кнопка \"",
@@ -96,8 +117,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674226128,
-          "stop": 1748674226191
+          "start": 1748946782731,
+          "stop": 1748946782784
         }
       ],
       "attachments": [],
@@ -113,8 +134,8 @@
           "excluded": false
         }
       ],
-      "start": 1748674225661,
-      "stop": 1748674226192
+      "start": 1748946782261,
+      "stop": 1748946782784
     },
     {
       "name": "1. Выход из системы",
@@ -138,8 +159,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674226193,
-          "stop": 1748674226842
+          "start": 1748946782785,
+          "stop": 1748946783368
         },
         {
           "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Выход]\"",
@@ -153,8 +174,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674226848,
-          "stop": 1748674227031
+          "start": 1748946783368,
+          "stop": 1748946783520
         },
         {
           "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Да]\"",
@@ -168,8 +189,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1748674227032,
-          "stop": 1748674227135
+          "start": 1748946783520,
+          "stop": 1748946783614
         }
       ],
       "attachments": [],
@@ -180,12 +201,12 @@
           "excluded": false
         }
       ],
-      "start": 1748674226192,
-      "stop": 1748674227135
+      "start": 1748946782785,
+      "stop": 1748946783614
     }
   ],
   "attachments": [],
   "parameters": [],
-  "start": 1748674225622,
-  "stop": 1748674227305
+  "start": 1748946782260,
+  "stop": 1748946783740
 }
