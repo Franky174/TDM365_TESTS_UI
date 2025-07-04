@@ -29,7 +29,7 @@ namespace Tdms.Automatic.Ui.Tests
 
         public void Login(string username, string password = "")
         {
-            var fields = Context.GetComponents<BaseWebComponent>().WithDescription(new Description(Selector.Css("*[data-signature='input-wrapper']"), "Поле")).Build();
+            var fields = Context.GetComponents<BaseWebComponent>().WithDescription(new Description(Selector.Css("input[data-signature='input-wrapper']"), "Поле")).Build();
             fields[0].Actions.SendKeys(username);
             fields[1].Actions.SendKeys(password);
 

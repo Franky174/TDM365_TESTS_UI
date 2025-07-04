@@ -1,0 +1,723 @@
+{
+  "uuid": "fb3471cf-50f6-46c6-a31c-b3047f23944d",
+  "historyId": "a82d02e93096f8574c2c35c35ec74de6",
+  "testCaseId": "b8fec0c67d7e77cd59d3cc86bbe2bece",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.HeadersTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.HeadersTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Разделы"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Разделы"
+    },
+    {
+      "name": "tag",
+      "value": "Панели"
+    },
+    {
+      "name": "tag",
+      "value": "Рабочий стол"
+    },
+    {
+      "name": "tag",
+      "value": "Объекты"
+    },
+    {
+      "name": "tag",
+      "value": "Почта"
+    },
+    {
+      "name": "tag",
+      "value": "Совещания"
+    },
+    {
+      "name": "tag",
+      "value": "Справка"
+    },
+    {
+      "name": "tag",
+      "value": "О программе"
+    },
+    {
+      "name": "tag",
+      "value": "Сменить пароль"
+    },
+    {
+      "name": "tag",
+      "value": "Настройки"
+    },
+    {
+      "name": "tag",
+      "value": "Интерфейс"
+    },
+    {
+      "name": "tag",
+      "value": "Уведомления"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.HeadersTest",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "An exception occurred while clicking on the web component. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')\nAn exception occurred while retrieving a web element of the web component. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')\nFound 0 web elements that match the condition, but 1 were expected. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')",
+    "trace": "   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)\r\n   at Bismuthum.Allure.Implementations.AllureActions.Invoke(Func`2 action, String actionDescription, Nullable`1 timeout)\r\n   at Tdms.Ui.Test.Components.Implementations.ContextMenu.ContextMenuItemComponent.Click(Nullable`1 timeout)\r\n   at TDM365.UI.Tests.__a$_around_UserCommand_100663309_o(String Command, Boolean bClose, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 180\r\n   at TDM365.UI.Tests.__a$_around_UserCommand_100663309_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.Refresh(CancellationToken token, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)"
+  },
+  "stage": "finished",
+  "description": "Открытие основных разделов TDM365 и выполнение каждой команды из меню пользователя",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947497863,
+          "stop": 1750947497929
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947497929,
+          "stop": 1750947497969
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947497969,
+          "stop": 1750947498020
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1750947497508,
+      "stop": 1750947498020
+    },
+    {
+      "name": "1. Переход в раздел \"Панели\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Logo Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947498020,
+          "stop": 1750947498655
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Панели\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1750947498020,
+      "stop": 1750947498655
+    },
+    {
+      "name": "2. Переход в раздел \"Рабочий стол\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Desktop Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947498655,
+          "stop": 1750947498822
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Рабочий стол\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1750947498655,
+      "stop": 1750947498822
+    },
+    {
+      "name": "3. Переход в раздел \"Объекты\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Objects Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947498822,
+          "stop": 1750947498971
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Объекты\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1750947498822,
+      "stop": 1750947498971
+    },
+    {
+      "name": "4. Переход в раздел \"Почта\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Mail Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947498971,
+          "stop": 1750947499208
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Почта\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "4",
+          "excluded": false
+        }
+      ],
+      "start": 1750947498971,
+      "stop": 1750947499208
+    },
+    {
+      "name": "5. Переход в раздел \"Совещания\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Chat Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947499208,
+          "stop": 1750947499407
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Совещания\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "5",
+          "excluded": false
+        }
+      ],
+      "start": 1750947499208,
+      "stop": 1750947499407
+    },
+    {
+      "name": "6. Переход в раздел \"Справка\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Help Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947499407,
+          "stop": 1750947499639
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Справка\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "6",
+          "excluded": false
+        }
+      ],
+      "start": 1750947499407,
+      "stop": 1750947499639
+    },
+    {
+      "name": "7. Уведомления",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Messages Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947499640,
+          "stop": 1750947499942
+        },
+        {
+          "name": "Click on the \"Dialog  -> Header  -> Close Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947499942,
+          "stop": 1750947500006
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "7",
+          "excluded": false
+        }
+      ],
+      "start": 1750947499640,
+      "stop": 1750947500006
+    },
+    {
+      "name": "8. Команда пользователя - \"О программе\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500007,
+          "stop": 1750947500071
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == О программе]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500071,
+          "stop": 1750947500205
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500205,
+          "stop": 1750947500284
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"О программе\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "8",
+          "excluded": false
+        }
+      ],
+      "start": 1750947500007,
+      "stop": 1750947500284
+    },
+    {
+      "name": "9. Команда пользователя - \"Сменить пароль\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500284,
+          "stop": 1750947500339
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Сменить пароль]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500339,
+          "stop": 1750947500402
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500403,
+          "stop": 1750947500484
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Сменить пароль\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "9",
+          "excluded": false
+        }
+      ],
+      "start": 1750947500284,
+      "stop": 1750947500484
+    },
+    {
+      "name": "10. Команда пользователя - \"Настройки\"",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "An exception occurred while clicking on the web component. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')",
+        "trace": "Bismuthum.Core.Exceptions.ActionException: An exception occurred while clicking on the web component. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')\r\n ---> Bismuthum.Core.Exceptions.RefresherException: An exception occurred while retrieving a web element of the web component. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')\r\n ---> Bismuthum.Core.Exceptions.RefresherException: Found 0 web elements that match the condition, but 1 were expected. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   --- End of inner exception stack trace ---\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.Refresh(CancellationToken token, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   --- End of inner exception stack trace ---\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)\r\n   at Bismuthum.Allure.Implementations.AllureActions.Invoke(Func`2 action, String actionDescription, Nullable`1 timeout)\r\n   at Tdms.Ui.Test.Components.Implementations.ContextMenu.ContextMenuItemComponent.Click(Nullable`1 timeout)\r\n   at TDM365.UI.Tests.__a$_around_UserCommand_100663309_o(String Command, Boolean bClose, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 180\r\n   at TDM365.UI.Tests.__a$_around_UserCommand_100663309_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> User Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500484,
+          "stop": 1750947500536
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]\"",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An exception occurred while clicking on the web component. (Parameter 'Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройки]')",
+            "trace": "   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750947500536,
+          "stop": 1750947516610
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Настройки\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "10",
+          "excluded": false
+        }
+      ],
+      "start": 1750947500484,
+      "stop": 1750947516616
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1750947497507,
+  "stop": 1750947516787
+}

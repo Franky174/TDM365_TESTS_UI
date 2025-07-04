@@ -1,0 +1,120 @@
+{
+  "uuid": "e3b8ebd6-524d-40ca-ab0a-10db75f29809",
+  "historyId": "60538217ed1694cb1ceac59b56fc785a",
+  "testCaseId": "9a120a780e800d96462a4e72b17e3a5d",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.LoginTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.LoginTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Выход из системы"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.LoginTest",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "An exception occurred while sending \"SYSADMIN\" keys to the web component. (Parameter 'Поле ')\nelement not interactable\n  (Session info: chrome=137.0.7151.104)",
+    "trace": "   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.SendKeys(String keys, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>n__0(String keys, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass6_0.<SendKeys>b__0(Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)\r\n   at Bismuthum.Allure.Implementations.AllureActions.Invoke(Func`2 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.SendKeys(String keys, Nullable`1 timeout)\r\n   at Tdms.Automatic.Ui.Tests.BaseTest.Login(String username, String password) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\BaseTest.cs:line 33\r\n   at TDM365.UI.Tests.__a$_around_Authorization_100663304_o(String UserName, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 66\r\n   at TDM365.UI.Tests.__a$_around_Authorization_100663304_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.SendKeys(String text)\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)"
+  },
+  "stage": "finished",
+  "description": "Авторизация пользователя в системе и выход из системы",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "An exception occurred while sending \"SYSADMIN\" keys to the web component. (Parameter 'Поле ')",
+        "trace": "Bismuthum.Core.Exceptions.ActionException: An exception occurred while sending \"SYSADMIN\" keys to the web component. (Parameter 'Поле ')\r\n ---> OpenQA.Selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome=137.0.7151.104)\r\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.SendKeys(String text)\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   --- End of inner exception stack trace ---\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.SendKeys(String keys, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>n__0(String keys, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass6_0.<SendKeys>b__0(Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)\r\n   at Bismuthum.Allure.Implementations.AllureActions.Invoke(Func`2 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.SendKeys(String keys, Nullable`1 timeout)\r\n   at Tdms.Automatic.Ui.Tests.BaseTest.Login(String username, String password) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\BaseTest.cs:line 33\r\n   at TDM365.UI.Tests.__a$_around_Authorization_100663304_o(String UserName, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 66\r\n   at TDM365.UI.Tests.__a$_around_Authorization_100663304_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An exception occurred while sending \"SYSADMIN\" keys to the web component. (Parameter 'Поле ')",
+            "trace": "   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.SendKeys(String keys, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>n__0(String keys, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass6_0.<SendKeys>b__0(Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1750052653149,
+          "stop": 1750052669164
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1750052652779,
+      "stop": 1750052669170
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1750052652753,
+  "stop": 1750052669352
+}

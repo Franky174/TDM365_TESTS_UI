@@ -10,7 +10,8 @@
         "dependencies": {
           "Allure.Xunit": "2.12.1",
           "Microsoft.NET.Test.Sdk": "17.13.0",
-          "Tdms.Ui.Test.Components": "7.0.0",
+          "Selenium.WebDriver": "4.33.0",
+          "Tdms.Ui.Test.Components": "7.0.149",
           "coverlet.collector": "6.0.4",
           "xunit": "2.9.3",
           "xunit.runner.visualstudio": "2.8.2"
@@ -53,29 +54,6 @@
           "lib/netstandard2.0/AspectInjector.Broker.dll": {
             "assemblyVersion": "2.8.1.0",
             "fileVersion": "2.8.1.0"
-          }
-        }
-      },
-      "Bismuthum.Allure/0.0.9": {
-        "dependencies": {
-          "Allure.Net.Commons": "2.12.1",
-          "Bismuthum.Core": "0.0.9"
-        },
-        "runtime": {
-          "lib/net6.0/Bismuthum.Allure.dll": {
-            "assemblyVersion": "0.0.9.0",
-            "fileVersion": "0.0.9.0"
-          }
-        }
-      },
-      "Bismuthum.Core/0.0.9": {
-        "dependencies": {
-          "Selenium.WebDriver": "4.27.0"
-        },
-        "runtime": {
-          "lib/net6.0/Bismuthum.Core.dll": {
-            "assemblyVersion": "0.0.9.0",
-            "fileVersion": "0.0.9.0"
           }
         }
       },
@@ -448,7 +426,7 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "Selenium.WebDriver/4.27.0": {
+      "Selenium.WebDriver/4.33.0": {
         "dependencies": {
           "System.Text.Json": "8.0.5"
         },
@@ -1064,15 +1042,19 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Tdms.Ui.Test.Components/7.0.0": {
-        "dependencies": {
-          "Bismuthum.Allure": "0.0.9",
-          "Bismuthum.Core": "0.0.9"
-        },
+      "Tdms.Ui.Test.Components/7.0.149": {
         "runtime": {
+          "lib/net6.0/Bismuthum.Allure.dll": {
+            "assemblyVersion": "7.0.149.0",
+            "fileVersion": "7.0.149.0"
+          },
+          "lib/net6.0/Bismuthum.Core.dll": {
+            "assemblyVersion": "7.0.149.0",
+            "fileVersion": "7.0.149.0"
+          },
           "lib/net6.0/Tdms.Ui.Test.Components.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.0.0"
+            "assemblyVersion": "7.0.149.0",
+            "fileVersion": "7.0.149.0"
           }
         }
       },
@@ -1170,20 +1152,6 @@
       "sha512": "sha512-8BScDeaLazJVFaa2Tt9hoWLhllnxXP3Sew+l/vktdZEcgoPOsqhlDqe6GXJvy7xVkdICAbKFsrcDJ0cfrDR6Mg==",
       "path": "aspectinjector/2.8.1",
       "hashPath": "aspectinjector.2.8.1.nupkg.sha512"
-    },
-    "Bismuthum.Allure/0.0.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2MDehcFUWnE3zHZQ1UwfadHulV3SzIlHC1F678bfFU1THubeZwmgMUENPq6og6QsL6mpfy5VsiG0cix85LDlkg==",
-      "path": "bismuthum.allure/0.0.9",
-      "hashPath": "bismuthum.allure.0.0.9.nupkg.sha512"
-    },
-    "Bismuthum.Core/0.0.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-L2FEu1jwA+HqFbDG+2N2p82O9faYmG6M3z4b3crrwTbztL8cwybGX/aTWC5RUlDX0tc65v+RdFeNx+LrKlH0Tg==",
-      "path": "bismuthum.core/0.0.9",
-      "hashPath": "bismuthum.core.0.0.9.nupkg.sha512"
     },
     "coverlet.collector/6.0.4": {
       "type": "package",
@@ -1297,12 +1265,12 @@
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.27.0": {
+    "Selenium.WebDriver/4.33.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bMIpqwpBfYLa1lh8gPVa6A1i9LeWNsfc2mR9why0DutEKI7ck3GVxzco1bB/8bv+7IA6rk4sR9WpZLRUnH/AAw==",
-      "path": "selenium.webdriver/4.27.0",
-      "hashPath": "selenium.webdriver.4.27.0.nupkg.sha512"
+      "sha512": "sha512-5dzwA1cMorwYWudX46zyeUqyZn48TZeCHbSERxbpKezGxZ8hMBpcL12XwG4RGUuQKGH8FiEOJOFK4eCE//uNpQ==",
+      "path": "selenium.webdriver/4.33.0",
+      "hashPath": "selenium.webdriver.4.33.0.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
@@ -1717,12 +1685,12 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Tdms.Ui.Test.Components/7.0.0": {
+    "Tdms.Ui.Test.Components/7.0.149": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lzwazBoi/aWMzdhyH/VxhIVZKAr50D8vFb05xVmpwiCNQjbo/8/bpjOnUMwuyfuWcS4ZY83JyEQWx7nmaRTNig==",
-      "path": "tdms.ui.test.components/7.0.0",
-      "hashPath": "tdms.ui.test.components.7.0.0.nupkg.sha512"
+      "sha512": "sha512-HfSx9gK/hWmi1AYXdrga/zJaAqVR0MBwixIb7Obm8d4o3+l9hZt6HT5y6t3cGVGtRK2EhMS3YgNodWCY43BNMA==",
+      "path": "tdms.ui.test.components/7.0.149",
+      "hashPath": "tdms.ui.test.components.7.0.149.nupkg.sha512"
     },
     "xunit/2.9.3": {
       "type": "package",
