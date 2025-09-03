@@ -1,0 +1,369 @@
+{
+  "uuid": "2e4389bc-d236-4315-a8a3-98e339089c41",
+  "historyId": "636cd405884d8c9bb503b3b99776fa3d",
+  "testCaseId": "e8fe9e55ff1f8f8c1e01c6d5f3da64a7",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.ObjDevCreateTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.ObjDevCreateTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Объекты"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Объекты"
+    },
+    {
+      "name": "tag",
+      "value": "Объект разработки"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.ObjDevCreateTest",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "An exception occurred while context clicking on the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text ')\nAn exception occurred while retrieving a web element of the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text ')\nAn exception occurred while retrieving a web element of the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item]')\nFound 0 web elements that match the condition, but 1 were expected. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item]')",
+    "trace": "   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.ContextClick(Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)\r\n   at Bismuthum.Allure.Implementations.AllureActions.Invoke(Func`2 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.ContextClick(Nullable`1 timeout)\r\n   at Tdms.Ui.Test.Components.Implementations.TreeView.TreeViewItemComponent.ContextClick(Nullable`1 timeout)\r\n   at TDM365.UI.Tests.__a$_around_CreateProject_100663314_o(String sObjDev, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 402\r\n   at TDM365.UI.Tests.__a$_around_CreateProject_100663314_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.Refresh(CancellationToken token, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.Refresh(CancellationToken token, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)"
+  },
+  "stage": "finished",
+  "description": "Создание структуры Объекта разработки",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713823928,
+          "stop": 1756713824017
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713824017,
+          "stop": 1756713824065
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713824065,
+          "stop": 1756713824134
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1756713823611,
+      "stop": 1756713824134
+    },
+    {
+      "name": "1. Переход в раздел \"Объекты\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Objects Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713824138,
+          "stop": 1756713825231
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Объекты\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1756713824135,
+      "stop": 1756713825231
+    },
+    {
+      "name": "2. Создание Объекта разработки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Context click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == TDM365] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713825242,
+          "stop": 1756713825850
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Создать объект разработки]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713825851,
+          "stop": 1756713825979
+        },
+        {
+          "name": "Send \"xunit\" keys to the \"Dialog  -> Body  -> Input Component [System Identifier == ATTR_OCC_CODE] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713825982,
+          "stop": 1756713826404
+        },
+        {
+          "name": "Send \"01.09.2025 13:03:45 Автотестовый объект\" keys to the \"Dialog  -> Body  -> Text Area Component [System Identifier == ATTR_OCC_NAME] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713826405,
+          "stop": 1756713826556
+        },
+        {
+          "name": "Send \"Создано автотестом\" keys to the \"Dialog  -> Body  -> Text Area Component [System Identifier == ATTR_DESCRIPTION] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713826556,
+          "stop": 1756713826674
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713826675,
+          "stop": 1756713826761
+        },
+        {
+          "name": "Double click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == TDM365] -> Tree View Item [Has Text == True] AND [Text == xunit 01.09.2025 13:03:45 Автотестовый объект] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713827517,
+          "stop": 1756713828103
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1756713825232,
+      "stop": 1756713830105
+    },
+    {
+      "name": "3. Создание Проекта",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "An exception occurred while context clicking on the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text ')",
+        "trace": "Bismuthum.Core.Exceptions.ActionException: An exception occurred while context clicking on the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text ')\r\n ---> Bismuthum.Core.Exceptions.RefresherException: An exception occurred while retrieving a web element of the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text ')\r\n ---> Bismuthum.Core.Exceptions.RefresherException: An exception occurred while retrieving a web element of the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item]')\r\n ---> Bismuthum.Core.Exceptions.RefresherException: Found 0 web elements that match the condition, but 1 were expected. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item]')\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   --- End of inner exception stack trace ---\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.Refresh(CancellationToken token, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   --- End of inner exception stack trace ---\r\n   at Bismuthum.Core.Implementations.Refresher.GetElement(TimeSpan timeout)\r\n   at Bismuthum.Core.Implementations.Refresher.Refresh(CancellationToken token, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   --- End of inner exception stack trace ---\r\n   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.ContextClick(Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)\r\n   at Bismuthum.Allure.Implementations.AllureActions.Invoke(Func`2 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.ContextClick(Nullable`1 timeout)\r\n   at Tdms.Ui.Test.Components.Implementations.TreeView.TreeViewItemComponent.ContextClick(Nullable`1 timeout)\r\n   at TDM365.UI.Tests.__a$_around_CreateProject_100663314_o(String sObjDev, Int32 index) in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\Cases\\Tests.cs:line 402\r\n   at TDM365.UI.Tests.__a$_around_CreateProject_100663314_u(Object[] )\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSync[T](Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Context click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text \"",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An exception occurred while context clicking on the web component. (Parameter 'Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == Tree View Item] -> Text ')",
+            "trace": "   at Bismuthum.Core.Implementations.Actions.Invoke(Action`1 action, String actionDescription, Nullable`1 timeout)\r\n   at Bismuthum.Core.Implementations.Actions.ContextClick(Nullable`1 timeout)\r\n   at Bismuthum.Allure.Implementations.AllureActions.<>c__DisplayClass12_0.<Invoke>b__0()\r\n   at Bismuthum.Allure.Extensions.AllureExtensions.StartStep[T](String name, Func`1 action)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1756713830107,
+          "stop": 1756713846401
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "sObjDev",
+          "value": "\"Tree View Item\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1756713830105,
+      "stop": 1756713846410
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1756713823579,
+  "stop": 1756713846580
+}

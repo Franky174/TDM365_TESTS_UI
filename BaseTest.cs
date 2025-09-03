@@ -62,7 +62,7 @@ namespace Tdms.Automatic.Ui.Tests
             //options.AddArgument("--no-sandbox");
 
             options.AddArguments("--disable-notifications");
-            options.AddExcludedArgument("enable-automation");
+            //options.AddExcludedArgument("enable-automation"); //Перестало работать на 7.0.159
             options.AddArguments("--disable-infobars");
             options.AddArguments("--incognito");
 

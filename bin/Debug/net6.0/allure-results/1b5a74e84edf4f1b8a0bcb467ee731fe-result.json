@@ -1,0 +1,121 @@
+{
+  "uuid": "9b58e857-addd-4a8b-95ef-dbd3ded5f4f4",
+  "historyId": "a82d02e93096f8574c2c35c35ec74de6",
+  "testCaseId": "b8fec0c67d7e77cd59d3cc86bbe2bece",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.HeadersTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.HeadersTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Разделы"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Разделы"
+    },
+    {
+      "name": "tag",
+      "value": "Панели"
+    },
+    {
+      "name": "tag",
+      "value": "Рабочий стол"
+    },
+    {
+      "name": "tag",
+      "value": "Объекты"
+    },
+    {
+      "name": "tag",
+      "value": "Почта"
+    },
+    {
+      "name": "tag",
+      "value": "Совещания"
+    },
+    {
+      "name": "tag",
+      "value": "Справка"
+    },
+    {
+      "name": "tag",
+      "value": "О программе"
+    },
+    {
+      "name": "tag",
+      "value": "Сменить пароль"
+    },
+    {
+      "name": "tag",
+      "value": "Настройки"
+    },
+    {
+      "name": "tag",
+      "value": "Интерфейс"
+    },
+    {
+      "name": "tag",
+      "value": "Уведомления"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.HeadersTest",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir (SessionNotCreated)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities capabilities)\r\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\r\n   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)\r\n   at Tdms.Automatic.Ui.Tests.BaseTest.GetDriver() in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\BaseTest.cs:line 69\r\n   at Tdms.Automatic.Ui.Tests.BaseTest..ctor() in C:\\Work\\WEBTDMS\\TDM365_7.0\\TDM365 7.0\\TDM365_TESTS_UI\\BaseTest.cs:line 25\r\n   at TDM365.UI.Tests..ctor()\r\n   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)"
+  },
+  "stage": "finished",
+  "description": "Открытие основных разделов TDM365 и выполнение каждой команды из меню пользователя",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1755181330966,
+  "stop": 1755181330968
+}

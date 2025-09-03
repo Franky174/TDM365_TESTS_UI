@@ -16,6 +16,7 @@ using Tdms.Ui.Test.Components.Implementations;
 using Tdms.Ui.Test.Components.Implementations.Application;
 using Tdms.Ui.Test.Components.Implementations.ContextMenu;
 using Tdms.Ui.Test.Components.Implementations.Dialog;
+using Tdms.Ui.Test.Components.Implementations.ObjectDescription;
 using Tdms.Ui.Test.Components.Implementations.Table;
 using Tdms.Ui.Test.Components.Implementations.TreeView;
 using Xunit;
@@ -140,8 +141,9 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
         /// <param name="DialogName">Наименование нового диалога</param>
         /// <param name="index">Номер шага</param>
         [AllureStep("{index}. Запрос диалога по нажатию кнопки {SysName}")]
-        public DialogComponent GetDialogFromButton(string DialogMainName, string SysName, string DialogName, bool bClose, int index = 0)
+        public DialogComponent? GetDialogFromButton(string DialogMainName, string SysName, string DialogName, bool bClose, int index = 0)
         {
+            //string DialogNameDefault = "TDMS";
             //Параметр из отчета скрывается, но в файл записывается...
             //AllureLifecycle.Instance.UpdateStep(stepResult => stepResult.parameters.ForEach(x => x.mode = ParameterMode.Hidden));
             var Dialog = Context.GetComponent<DialogComponent>().ByText(DialogMainName).Build();
@@ -153,11 +155,26 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             Btn.Click();
             if (DialogName != "")
             {
-                var BtnDialog = Context.GetComponent<DialogComponent>().ByText(DialogName).Build();
-                if (!BtnDialog.IsAvailable(TimeSpan.FromMilliseconds(3000)))
-                    Assert.True(false, $"Не отобразился диалог кнопки {SysName}");
-                if (bClose)
-                    BtnDialog.Close(TimeSpan.FromMilliseconds(500));
+                DialogComponent? BtnDialog = Context.GetComponent<DialogComponent>().ByText(DialogName).Build();
+
+                int i = 0;
+                bool bDialog = false;
+                while (i < 5 && !bDialog)
+                {
+                    BtnDialog = Context.GetComponent<DialogComponent>().ByText(DialogName).Build();
+                    if (BtnDialog.IsAvailable(TimeSpan.FromMilliseconds(500)))
+                    {
+                        if (bClose) BtnDialog.Close(TimeSpan.FromMilliseconds(500));
+                        bDialog = true;
+                    }
+                    i++;
+                    Thread.Sleep(500);
+                }
+                if (!bDialog) Assert.True(false, $"Не отобразился диалог кнопки {SysName}");
+                //if (!BtnDialog.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+                //    Assert.True(false, $"Не отобразился диалог кнопки {SysName}");
+                //if (bClose)
+                //    BtnDialog.Close(TimeSpan.FromMilliseconds(500));
                 return BtnDialog;
             }
             
@@ -202,7 +219,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             //Поиск Меню администратора
             var SysMenuBtn = Application.Toolbar.GetComponent<ButtonComponent>().BySystemIdentifier("SUB_SYSADMIN").Build();
             //Если не нашли меню администратора - ищем глобальную кнопку тулбара
-            if (!SysMenuBtn.IsAvailable(TimeSpan.FromMilliseconds(100)))
+            if (!SysMenuBtn.IsAvailable(TimeSpan.FromMilliseconds(1000)))
             {
                 var GlobalBtn = Application.Toolbar.GlobalCommandsButton;
                 if (!GlobalBtn.IsAvailable(TimeSpan.FromMilliseconds(500)))
@@ -239,10 +256,10 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             contextMenuCommand.Click();
             int i = 0;
             bool bDialog = false;
-            while(i < 5)
+            while(i < 5 && !bDialog)
             {
                 var Dialog = Context.GetComponent<DialogComponent>().Build();
-                if (Dialog.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+                if (Dialog.IsAvailable(TimeSpan.FromMilliseconds(500)))
                 {
                     if (bClose)
                         Dialog.Close();
@@ -298,7 +315,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
                 if (MenuCmd.IsAvailable(TimeSpan.FromMilliseconds(500)))
                     MenuCmd.Click();
                 else
-                    Assert.True(false, $"Недоступна команда {Command}");
+                    Assert.True(false, $"{PanelName} - Недоступна команда {Command}");
                 break;
             }
             return;
@@ -310,7 +327,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
         /// <param name="index">Номер шага</param>
         /// <returns></returns>
         [AllureStep("{index}. Создание Объекта разработки")]
-        public TreeViewItemComponent CreateObjDev(int index = 0)
+        public string CreateObjDev(int index = 0)
         {
             string sCode = "xunit";
             string sName = $"{DateTime.Now} Автотестовый объект";
@@ -341,11 +358,11 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             createDlg.Ok();
 
             //Проверка Объекта разработки
-            var CreatedObj = rootTreeItem.GetItem().ByText(TreeDescr).Build();
-            bool bObj = CreatedObj.IsAvailable(TimeSpan.FromMilliseconds(1000));
-            Assert.True(bObj, $"В дереве созданный объект \"{TreeDescr}\" не найден");
+            //var CreatedObj = rootTreeItem.GetItem().ByText(TreeDescr).Build();
+            //bool bObj = CreatedObj.IsAvailable(TimeSpan.FromMilliseconds(1000));
+            //Assert.True(bObj, $"В дереве созданный объект \"{TreeDescr}\" не найден");
             //CreatedObj.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
-            CreatedObj.DoubleClick();
+            //CreatedObj.DoubleClick();
 
             //Обновить элемент дерева
             //CreatedObj.ContextClick();
@@ -355,26 +372,298 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
 
             //Проверка состава
             //Сопровождающие документы по объекту
-            var Content0 = CreatedObj.GetItem().ByText(sContent0).Build();
-            Content0.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            //var Content0 = CreatedObj.GetItem().ByText(sContent0).Build();
+            //Content0.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            ////Размещение документации
+            //var Content1 = CreatedObj.GetItem().ByText(sContent1).Build();
+            //Content1.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            ////Проекты
+            //var Content2 = CreatedObj.GetItem().ByText(sContent2).Build();
+            //Content2.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            ////Структура объекта
+            //var Content3 = CreatedObj.GetItem().ByText(sContent3).Build();
+            //Content3.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            ////Техническая документация
+            //var Content4 = CreatedObj.GetItem().ByText(sContent4).Build();
+            //Content4.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            return TreeDescr;
+        }
+
+        /// <summary>
+        /// Проверка объекта структуры
+        /// </summary>
+        /// <param name="sObjDev">Описание объекта разработки</param>
+        /// <param name="index">Номер шага</param>
+        /// <returns></returns>
+        [AllureStep("{index}. Проверка Объекта разработки")]
+        public string CheckObjDev(string sObjDev, int index = 0)
+        {
+            string sContent0 = "Сопровождающие документы по объекту";
+            string sContent1 = "Размещение документации";
+            string sContent2 = "Проекты";
+            //string sContent3 = $"{sCode} Структура объекта \"{sName}\"";
+            string sContent3 = "Структура объекта";
+            //string sContent4 = $"{sCode}.ТД Техническая документация на \"{sName}\"";
+            string sContent4 = "ТД Техническая документация на";
+
+            var rootTreeItem = Application.TreeView.GetComponent<TreeViewItemComponent>().ByText("TDM365").Build();
+
+            //Проверка Объекта разработки
+            var TreeObj = rootTreeItem.GetItem().ByText(sObjDev).Build();
+            bool bObj = TreeObj.IsAvailable(TimeSpan.FromMilliseconds(500));
+            Assert.True(bObj, $"В дереве Объект разработки \"{sObjDev}\" не найден");
+            //CreatedObj.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            if (!TreeObj.GetItems().Build().Any()) TreeObj.DoubleClick();
+
+            //Обновить элемент дерева
+            //CreatedObj.ContextClick();
+            //contextMenu = Context.GetComponent<ContextMenuComponent>().Build();
+            //contextMenuItem = contextMenu.GetItem().ByText("Обновить").Build();
+            //contextMenuItem.Click();
+
+            //Проверка состава
+            //Сопровождающие документы по объекту
+            var Content0 = TreeObj.GetItem().ByText(sContent0).Build();
+            Content0.ShouldAvailable(TimeSpan.FromMilliseconds(500));
 
             //Размещение документации
-            var Content1 = CreatedObj.GetItem().ByText(sContent1).Build();
-            Content1.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            var Content1 = TreeObj.GetItem().ByText(sContent1).Build();
+            Content1.ShouldAvailable(TimeSpan.FromMilliseconds(500));
 
             //Проекты
-            var Content2 = CreatedObj.GetItem().ByText(sContent2).Build();
-            Content2.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            var Content2 = TreeObj.GetItem().ByText(sContent2).Build();
+            Content2.ShouldAvailable(TimeSpan.FromMilliseconds(500));
 
             //Структура объекта
-            var Content3 = CreatedObj.GetItem().ByText(sContent3).Build();
-            Content3.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            var Content3 = TreeObj.GetItem().ByText(sContent3).Build();
+            Content3.ShouldAvailable(TimeSpan.FromMilliseconds(500));
 
             //Техническая документация
-            var Content4 = CreatedObj.GetItem().ByText(sContent4).Build();
-            Content4.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            var Content4 = TreeObj.GetItem().ByText(sContent4).Build();
+            Content4.ShouldAvailable(TimeSpan.FromMilliseconds(500));
 
-            return CreatedObj;
+            return sObjDev;
+        }
+
+        /// <summary>
+        /// Создание проекта
+        /// </summary>
+        /// <param name="sObjDev">Описание объекта разработки, в составе которого создание Проекта</param>
+        /// <param name="index">Номер шага</param>
+        /// <returns></returns>
+        [AllureStep("{index}. Создание Проекта")]
+        public string CreateProject(string sObjDev, int index = 0)
+        {
+            string sCode = $"{DateTime.Now.Ticks}";
+            string sName = "Автотестовый проект";
+            string sFullName = $"Создано автотестом";
+            var Date = DateTime.Now;
+            string TreeDescr = $"{sCode} {sName}";
+            string sContent0 = $"{sCode} Размещение документации";
+            string sContent1 = $"{sCode} План работ";
+            string sContent2 = "Сопровождающая документация";
+            string sContent3 = "Техническая документация проекта";
+            string sContent4 = "Пакеты документов";
+
+            //Создание проекта
+            var rootTreeItem = Application.TreeView.GetComponent<TreeViewItemComponent>().ByText(sObjDev).Build();
+            var ProjectsTreeItem = rootTreeItem.GetComponent<TreeViewItemComponent>().ByText("Проекты").Build();
+            ProjectsTreeItem.ContextClick();
+            var contextMenu = Context.GetComponent<ContextMenuComponent>().Build();
+            var contextMenuItem = contextMenu.GetItem().ByText("Создать проект").Build();
+            contextMenuItem.Click();
+            var createDlg = Context.GetComponent<DialogComponent>().Build();
+
+            //Переключение на вкладку Проект
+            var Tab = createDlg.Body.GetComponent<TabComponent>().ByText("Проект").Build();
+            Tab.Click();
+            if (Tab.IsAvailable(TimeSpan.FromMilliseconds(100))) Tab.Click(); //С первого раза почему-то не срабатывает
+
+            //Заполнение атрибутов
+            var CodeEdit = createDlg.Body.GetComponent<InputComponent>().BySystemIdentifier("ATTR_Project_Code").Build();
+            CodeEdit.SetValue(sCode);
+            var NameEdit = createDlg.Body.GetComponent<InputComponent>().BySystemIdentifier("ATTR_Project_Name").Build();
+            NameEdit.SetValue(sName);
+            var FullNameEdit = createDlg.Body.GetComponent<TextAreaComponent>().BySystemIdentifier("ATTR_Project_Full_Name").Build();
+            FullNameEdit.SetValue(sFullName);
+            var DateEdit = createDlg.Body.GetComponent<InputComponent>().BySystemIdentifier("ATTR_PROJECT_DATE_FINISH_PLAN").Build();
+            DateEdit.SetValue(Date.ToString());
+
+            //Указание групп
+            //Назначить права
+            var Btn = createDlg.Body.GetComponent<ButtonComponent>().ByReference("BUTTON_ROLES_SET").Build();
+            Btn.Click();
+            Btn.Click();
+            var SelectDlg = Context.GetComponents<DialogComponent>().ByText("Определение").Build().LastOrDefault();
+            if (SelectDlg != null)
+            {
+                //Участники проекта
+                Btn = SelectDlg.Body.GetComponent<ButtonComponent>().ByReference("BUTTON_PROJECT_TEAM").Build();
+                Btn.Click();
+                var Select0Dlg = Context.GetComponents<DialogComponent>().ByText("Выбор").Build().LastOrDefault();
+                if (Select0Dlg != null)
+                {
+                    var Cell = Select0Dlg.Body.GetComponent<TableComponent>().Build().GetCell().ByText("Все пользователи").Build();
+                    if (Cell.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+                        Cell.Click();
+                    Select0Dlg.Ok();
+                }
+                //Приемка документации
+                Btn = SelectDlg.Body.GetComponent<ButtonComponent>().ByReference("BUTTON_PROJECT_CHECKING").Build();
+                Btn.Click();
+                Select0Dlg = Context.GetComponents<DialogComponent>().ByText("Выбор").Build().LastOrDefault();
+                if (Select0Dlg != null)
+                {
+                    var Cell = Select0Dlg.Body.GetComponent<TableComponent>().Build().GetCell().ByText("Все пользователи").Build();
+                    if (Cell.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+                        Cell.Click();
+                    Select0Dlg.Ok();
+                }
+                //Размещение документации
+                Btn = SelectDlg.Body.GetComponent<ButtonComponent>().ByReference("BUTTON_PROJECT_CREATING").Build();
+                Btn.Click();
+                Select0Dlg = Context.GetComponents<DialogComponent>().ByText("Выбор").Build().LastOrDefault();
+                if (Select0Dlg != null)
+                {
+                    var Cell = Select0Dlg.Body.GetComponent<TableComponent>().Build().GetCell().ByText("Все пользователи").Build();
+                    if (Cell.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+                        Cell.Click();
+                    Select0Dlg.Ok();
+                }
+                SelectDlg.Ok();
+                if (SelectDlg.IsAvailable(TimeSpan.FromMilliseconds(100))) SelectDlg.Ok();
+            }
+
+            //Переключение на вкладку Регламент
+            Tab = createDlg.Body.GetComponent<TabComponent>().ByText("Регламент").Build();
+            Tab.Click();
+            if (Tab.IsAvailable(TimeSpan.FromMilliseconds(100))) Tab.Click(); //С первого раза почему-то не срабатывает
+
+            //Указание производственного календаря
+            Btn = createDlg.Body.GetComponent<ButtonComponent>().ByReference("BUTTON_PROD_CALENDAR").Build();
+            Btn.Click();
+            SelectDlg = Context.GetComponents<DialogComponent>().ByText("Выбор").Build().LastOrDefault();
+            if (SelectDlg != null)
+            {
+                var Cell = SelectDlg.Body.GetComponent<TableComponent>().Build().GetCell().ByText("календарь").Build();
+                if (Cell.IsAvailable(TimeSpan.FromMilliseconds(500)))
+                    Cell.Click();
+                SelectDlg.Ok();
+                if (SelectDlg.IsAvailable(TimeSpan.FromMilliseconds(100))) SelectDlg.Ok();
+            }
+
+            //Сохранение проекта
+            createDlg.Ok();
+            //if (createDlg.IsAvailable(TimeSpan.FromMilliseconds(100))) createDlg.Ok();
+
+            //Проверка Проекта
+            ProjectsTreeItem.DoubleClick();
+            var CreatedObj = ProjectsTreeItem.GetItem().ByText(TreeDescr).Build();
+            bool bObj = CreatedObj.IsAvailable(TimeSpan.FromMilliseconds(1000));
+            Assert.True(bObj, $"В дереве созданный объект \"{TreeDescr}\" не найден");
+            //CreatedObj.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            CreatedObj.DoubleClick();
+
+            //Запуск проекта на выполнение
+            //CreatedObj.ContextClick();
+            //contextMenu = Context.GetComponent<ContextMenuComponent>().Build();
+            //contextMenuItem = contextMenu.GetItem().ByText("Начать выполнение").Build();
+            //contextMenuItem.Click();
+            ////Запрос запуска проекта
+            //var ExecuteDialog = Context.GetComponent<DialogComponent>().ByText("TDM365").Build();
+            //if (!ExecuteDialog.IsAvailable(TimeSpan.FromMilliseconds(3000)))
+            //    Assert.True(false, $"Не отобразился диалог команды \"Начать выполнение\"");
+            //ExecuteDialog.Yes(TimeSpan.FromMilliseconds(500));
+
+            ////Проверка состава
+            ////Размещение документации
+            //var Content0 = CreatedObj.GetItem().ByText(sContent0).Build();
+            //Content0.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            ////План работ
+            //var Content1 = CreatedObj.GetItem().ByText(sContent1).Build();
+            //Content1.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            ////Сопровождающая документация
+            //var Content2 = CreatedObj.GetItem().ByText(sContent2).Build();
+            //Content2.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            ////Техническая документация проекта
+            //var Content3 = CreatedObj.GetItem().ByText(sContent3).Build();
+            //Content3.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+            ////Пакеты документов
+            //var Content4 = CreatedObj.GetItem().ByText(sContent4).Build();
+            //Content4.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
+
+            return TreeDescr;
+        }
+
+        /// <summary>
+        /// Запуск проекта на выполнение
+        /// </summary>
+        /// <param name="sProject">Описание объекта</param>
+        /// <param name="index">Номер шага</param>
+        /// <returns></returns>
+        [AllureStep("{index}. Запуск Проекта")]
+        public string ExecuteProject(string sProject, int index = 0)
+        {
+            //Поиск проекта в дереве
+            var ProjectTreeItem = Application.TreeView.GetComponent<TreeViewItemComponent>().ByText(sProject).Build();
+            Assert.True(ProjectTreeItem.IsAvailable(TimeSpan.FromMilliseconds(500)), $"В дереве Проект \"{sProject}\" не найден");
+
+            //Просмотр проекта для чтения кода проекта
+            ProjectTreeItem.ContextClick();
+            var contextMenu = Context.GetComponent<ContextMenuComponent>().Build();
+            var contextMenuItem = contextMenu.GetItem().ByText("Просмотреть").Build();
+            contextMenuItem.Click();
+            var ObjDlg = Context.GetComponent<DialogComponent>().Build();
+            Assert.True(ObjDlg.IsAvailable(TimeSpan.FromMilliseconds(500)), $"Диалог просмотра проекта не найден");
+            var Tab = ObjDlg.Body.GetComponent<TabComponent>().ByText("Проект").Build();
+            Tab.Click();
+            var CodeEdit = ObjDlg.Body.GetComponent<InputComponent>().BySystemIdentifier("ATTR_Project_Code").Build();
+            string sCode = CodeEdit.GetValue();
+            ObjDlg.Close();
+
+            string sContent0 = $"{sCode} Размещение документации";
+            string sContent1 = $"{sCode} План работ";
+            string sContent2 = "Сопровождающая документация";
+            string sContent3 = "Техническая документация проекта";
+            string sContent4 = "Пакеты документов";
+
+            //Запуск проекта на выполнение
+            ProjectTreeItem.ContextClick();
+            contextMenu = Context.GetComponent<ContextMenuComponent>().Build();
+            contextMenuItem = contextMenu.GetItem().ByText("Начать выполнение").Build();
+            contextMenuItem.Click();
+            //Запрос запуска проекта
+            var ExecuteDialog = Context.GetComponent<DialogComponent>().ByText("TDM365").Build();
+            if (!ExecuteDialog.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+                Assert.True(false, $"Не отобразился диалог команды \"Начать выполнение\"");
+            ExecuteDialog.Yes(TimeSpan.FromMilliseconds(500));
+
+            //Проверка состава
+            //Размещение документации
+            var Content0 = ProjectTreeItem.GetItem().ByText(sContent0).Build();
+            Content0.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            //План работ
+            var Content1 = ProjectTreeItem.GetItem().ByText(sContent1).Build();
+            Content1.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            //Сопровождающая документация
+            var Content2 = ProjectTreeItem.GetItem().ByText(sContent2).Build();
+            Content2.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            //Техническая документация проекта
+            var Content3 = ProjectTreeItem.GetItem().ByText(sContent3).Build();
+            Content3.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+
+            //Пакеты документов
+            var Content4 = ProjectTreeItem.GetItem().ByText(sContent4).Build();
+            Content4.ShouldAvailable(TimeSpan.FromMilliseconds(500));
+            return sProject;
         }
 
         //====================================================================================================
@@ -415,7 +704,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             Notifications(true, 7);
             UserCommand("О программе", true, 8);
             UserCommand("Сменить пароль", true, 9);
-            UserCommand("Настройки", true, 10);
+            UserCommand("Свойства пользователя", true, 10);
             UserCommand("Интерфейс", true, 11);
         }
 
@@ -447,7 +736,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             PanelCommand("Закрыть панель", "FORM_EVENTS_LOG", 12);
             PanelCommand("Закрыть панель", "FORM_NOTIFICATIONS_HISTORY", 13);
             PanelCommand("Закрыть панель", "FORM_PANEL_PROJECTS", 14);
-            PanelCommand("Закрыть панель", "FORM_PANEL_PLANNING", 15);
+            //PanelCommand("Закрыть панель", "FORM_PANEL_PLANNING", 15); //У последней панели нет команды на закрытие
         }
 
         #region Меню_администратора
@@ -502,15 +791,33 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             FieldEmptyCheck(DialogName, "ATTR_NAME", 4);
         }
 
+        /// <summary>
+        /// Команда меню администратора - Системные атрибуты
+        /// </summary>
+        [Fact]
+        [AllureFeature("Авторизация", "Меню администратора")]
+        [AllureDescription("Запуск команды меню администратора - Системные атрибуты")]
+        [AllureTag("Авторизация", "Меню администратора", "Системные атрибуты")]
+        [AllureOwner("Чернышов Дмитрий")]
+        public void SysAttrs()
+        {
+            Authorization("SYSADMIN", 0);
+            string DialogName = "Системные атрибуты";
+            var Command = AdminCommand("Системные атрибуты", false, 1);
+
+            //Нажатие на кнопку - Строки переменной величины
+            GetDialogFromButton(DialogName, "BUTTON_HEIGHT", "", true, 2);
+        }
+
         #endregion AdminMenu
 
         /// <summary>
-        /// Создание Объекта разработки
+        /// Создание структуры Объекта разработки
         /// </summary>
         [Fact]
         [AllureFeature("Авторизация", "Объекты")]
         [AllureDescription("Создание структуры Объекта разработки")]
-        [AllureTag("Авторизация", "Объекты", "Объект разработки")]
+        [AllureTag("Авторизация", "Объекты", "Объект разработки", "Проект")]
         [AllureOwner("Чернышов Дмитрий")]
         public void ObjDevCreateTest()
         {
@@ -519,7 +826,16 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             GoToSection("Объекты", 1);
 
             //Создание Объекта разработки
-            var ObjDev = CreateObjDev(2);
+            string ObjDev = CreateObjDev(2);
+
+            //Проверка Объекта разработки
+            ObjDev = CheckObjDev(ObjDev, 3);
+
+            //Создание Проекта
+            string Project = CreateProject(ObjDev, 4);
+
+            //Запуск проекта
+            Project = ExecuteProject(Project, 5);
         }
 
         
