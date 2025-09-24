@@ -182,6 +182,67 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
         }
 
         /// <summary>
+        /// Функция переключения на вкладку диалога
+        /// </summary>
+        /// <param name="DialogMainName">Наименование диалога с кнопкой</param>
+        /// <param name="TabName">Системное имя вкладки</param>
+        /// <param name="DialogName">Наименование нового диалога</param>
+        /// <param name="index">Номер шага</param>
+        //[AllureStep("{index}. Запрос диалога по нажатию кнопки {SysName}")]
+        //public TabComponent TabSwitch(object Dialog, string TabName, int index = 0)
+        //{
+        //    //string DialogNameDefault = "TDMS";
+        //    //Параметр из отчета скрывается, но в файл записывается...
+        //    //AllureLifecycle.Instance.UpdateStep(stepResult => stepResult.parameters.ForEach(x => x.mode = ParameterMode.Hidden));
+
+        //    DialogComponent? ObjDlg = null;
+        //    if (Dialog is DialogComponent)
+        //        ObjDlg = Dialog as DialogComponent;
+        //    else if (Dialog is string)
+        //    {
+        //        string sDialog = Dialog?.ToString() ?? "";
+        //        ObjDlg = Context.GetComponent<DialogComponent>().ByText(sDialog).Build();
+        //    }
+        //    if (!ObjDlg.IsAvailable(TimeSpan.FromMilliseconds(500)))
+        //        Assert.True(false, $"Не найден диалог {Dialog?.ToString() ?? ""}");
+
+        //    TabComponent Tab = ObjDlg.Body.GetComponent<TabComponent>().BySystemIdentifier("FORM_MAIL_SETTINGS").Build();
+        //    Tab.Click();
+
+            
+        //    var Btn = Dialog.Body.GetComponent<ButtonComponent>().BySystemIdentifier(SysName).Build();
+        //    if (!Btn.IsAvailable(TimeSpan.FromMilliseconds(500)))
+        //        Assert.True(false, $"Не доступна кнопка {SysName}");
+        //    Btn.Click();
+        //    if (DialogName != "")
+        //    {
+        //        DialogComponent? BtnDialog = Context.GetComponent<DialogComponent>().ByText(DialogName).Build();
+
+        //        int i = 0;
+        //        bool bDialog = false;
+        //        while (i < 5 && !bDialog)
+        //        {
+        //            BtnDialog = Context.GetComponent<DialogComponent>().ByText(DialogName).Build();
+        //            if (BtnDialog.IsAvailable(TimeSpan.FromMilliseconds(500)))
+        //            {
+        //                if (bClose) BtnDialog.Close(TimeSpan.FromMilliseconds(500));
+        //                bDialog = true;
+        //            }
+        //            i++;
+        //            Thread.Sleep(500);
+        //        }
+        //        if (!bDialog) Assert.True(false, $"Не отобразился диалог кнопки {SysName}");
+        //        //if (!BtnDialog.IsAvailable(TimeSpan.FromMilliseconds(1000)))
+        //        //    Assert.True(false, $"Не отобразился диалог кнопки {SysName}");
+        //        //if (bClose)
+        //        //    BtnDialog.Close(TimeSpan.FromMilliseconds(500));
+        //        return Tab;
+        //    }
+
+        //    return Tab;
+        //}
+
+        /// <summary>
         /// Выполнение команды в меню пользователя
         /// </summary>
         /// <param name="Command">Имя команды</param>
@@ -807,6 +868,74 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
 
             //Нажатие на кнопку - Строки переменной величины
             GetDialogFromButton(DialogName, "BUTTON_HEIGHT", "", true, 2);
+        }
+
+        /// <summary>
+        /// Команда меню администратора - Импорт пользователей
+        /// </summary>
+        [Fact]
+        [AllureFeature("Авторизация", "Меню администратора")]
+        [AllureDescription("Запуск команды меню администратора - Импорт пользователей")]
+        [AllureTag("Авторизация", "Меню администратора", "Импорт пользователей")]
+        [AllureOwner("Чернышов Дмитрий")]
+        public void ImportUsers()
+        {
+            Authorization("SYSADMIN", 0);
+            string DialogName = "Импорт пользователей";
+            var Command = AdminCommand("Импорт пользователей", false, 1);
+
+            //Нажатие на кнопку - Строки переменной величины
+            GetDialogFromButton(DialogName, "BUTTON_HEIGHT", "", true, 2);
+        }
+
+        /// <summary>
+        /// Команда меню администратора - Импорт пользователей
+        /// </summary>
+        [Fact]
+        [AllureFeature("Авторизация", "Меню администратора")]
+        [AllureDescription("Запуск команды меню администратора - Делегирование прав")]
+        [AllureTag("Авторизация", "Меню администратора", "Делегирование прав")]
+        [AllureOwner("Чернышов Дмитрий")]
+        public void DelegationUsers()
+        {
+            Authorization("SYSADMIN", 0);
+            string DialogName = "Делегирование прав";
+            var Command = AdminCommand("Делегирование прав", false, 1);
+
+            //Нажатие на кнопку - Добавить запись
+            GetDialogFromButton(DialogName, "BUTTON_ADD", "Замещение", true, 2);
+        }
+
+        /// <summary>
+        /// Команда меню администратора - Настройка шаблона уведомлений
+        /// </summary>
+        [Fact]
+        [AllureFeature("Авторизация", "Меню администратора")]
+        [AllureDescription("Запуск команды меню администратора - Настройка шаблона уведомлений")]
+        [AllureTag("Авторизация", "Меню администратора", "Настройка шаблона уведомлений")]
+        [AllureOwner("Чернышов Дмитрий")]
+        public void NotificationTemplate()
+        {
+            Authorization("SYSADMIN", 0);
+            var Command = AdminCommand("Настройка шаблона уведомлений", false, 1);
+
+            var ObjDlg = Context.GetComponent<DialogComponent>().Build();
+            //Переключение на вкладку Проект
+            var Tab = ObjDlg.Body.GetComponent<TabComponent>().BySystemIdentifier("FORM_NOTIFICATION_TEMPLATE").Build();
+            Tab.Click();
+            //if (Tab.IsAvailable(TimeSpan.FromMilliseconds(100))) Tab.Click(); //С первого раза почему-то не срабатывает
+
+            //Нажатие на кнопку - Добавить уведомление
+            GetDialogFromButton("Редактирование объекта", "BUTTON_ADD", "Настройка уведомления", true, 2);
+
+            ObjDlg = Context.GetComponent<DialogComponent>().Build();
+            Tab = ObjDlg.Body.GetComponent<TabComponent>().BySystemIdentifier("FORM_MAIL_SETTINGS").Build();
+            Tab.Click();
+            Tab = ObjDlg.Body.GetComponent<TabComponent>().BySystemIdentifier("FORM_NOTIFICATIONS_HISTORY").Build();
+            Tab.Click();
+            Thread.Sleep(200);
+
+            ObjDlg.Cancel();
         }
 
         #endregion AdminMenu
