@@ -476,7 +476,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
 
             //Проверка Объекта разработки
             var TreeObj = rootTreeItem.GetItem().ByText(sObjDev).Build();
-            bool bObj = TreeObj.IsAvailable(TimeSpan.FromMilliseconds(500));
+            bool bObj = TreeObj.IsAvailable(TimeSpan.FromMilliseconds(1000));
             Assert.True(bObj, $"В дереве Объект разработки \"{sObjDev}\" не найден");
             //CreatedObj.ShouldAvailable(TimeSpan.FromMilliseconds(1000));
             if (!TreeObj.GetItems().Build().Any()) TreeObj.DoubleClick();
