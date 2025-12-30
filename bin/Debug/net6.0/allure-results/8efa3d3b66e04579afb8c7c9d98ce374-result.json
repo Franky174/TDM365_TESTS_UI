@@ -1,0 +1,272 @@
+{
+  "uuid": "62d15d08-a981-42ad-bd11-88c79011f061",
+  "historyId": "135a9990e8f376d303b38eee8ba61874",
+  "testCaseId": "c2828786cdef34ded04793c1b496a0fe",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.ImportUsers()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.ImportUsers"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "tag",
+      "value": "Импорт пользователей"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.ImportUsers",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "Запуск команды меню администратора - Импорт пользователей",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766635813896,
+          "stop": 1766635813961
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766635813961,
+          "stop": 1766635814000
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766635814000,
+          "stop": 1766635814051
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1766635813600,
+      "stop": 1766635814051
+    },
+    {
+      "name": "1. Команда администратора - \"Импорт пользователей\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Toolbar [Is displayed == True] -> Button [System Identifier == SUB_SYSADMIN]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766635814668,
+          "stop": 1766635814735
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Импорт пользователей]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766635814843,
+          "stop": 1766635814942
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Импорт пользователей\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1766635814051,
+      "stop": 1766635815486
+    },
+    {
+      "name": "2. Запрос диалога по нажатию кнопки \"BUTTON_HEIGHT\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Импорт пользователей] -> Body  -> Button [System Identifier == BUTTON_HEIGHT]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766635815589,
+          "stop": 1766635815691
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogMainName",
+          "value": "\"Импорт пользователей\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"BUTTON_HEIGHT\"",
+          "excluded": false
+        },
+        {
+          "name": "DialogName",
+          "value": "\"\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1766635815487,
+      "stop": 1766635815691
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1766635813600,
+  "stop": 1766635815807
+}

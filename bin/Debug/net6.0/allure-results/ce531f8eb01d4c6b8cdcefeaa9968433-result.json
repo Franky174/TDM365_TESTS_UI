@@ -1,0 +1,347 @@
+{
+  "uuid": "c42a2735-90d9-47e1-94ec-f68321d9d54f",
+  "historyId": "cb00d753cde70d4d9ca3f48c84142645",
+  "testCaseId": "4f663ab79b817a9a5fff96410a379a1c",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.NotificationTemplate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.NotificationTemplate"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Меню администратора"
+    },
+    {
+      "name": "tag",
+      "value": "Настройка шаблона уведомлений"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.NotificationTemplate",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "Запуск команды меню администратора - Настройка шаблона уведомлений",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120943039,
+          "stop": 1766120943104
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120943104,
+          "stop": 1766120943146
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120943146,
+          "stop": 1766120943199
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1766120942684,
+      "stop": 1766120943199
+    },
+    {
+      "name": "1. Команда администратора - \"Настройка шаблона уведомлений\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Toolbar [Is displayed == True] -> Button [System Identifier == SUB_SYSADMIN]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120943842,
+          "stop": 1766120943917
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Настройка шаблона уведомлений]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120944059,
+          "stop": 1766120944190
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Настройка шаблона уведомлений\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "false",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1766120943199,
+      "stop": 1766120944970
+    },
+    {
+      "name": "Click on the \"Dialog  -> Body  -> Tab [System Identifier == FORM_NOTIFICATION_TEMPLATE]\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766120944970,
+      "stop": 1766120945035
+    },
+    {
+      "name": "2. Запрос диалога по нажатию кнопки \"BUTTON_ADD\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Редактирование объекта] -> Body  -> Button [System Identifier == BUTTON_ADD]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120945114,
+          "stop": 1766120945240
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Настройка уведомления] -> Header  -> Close Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120945345,
+          "stop": 1766120945443
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "DialogMainName",
+          "value": "\"Редактирование объекта\"",
+          "excluded": false
+        },
+        {
+          "name": "SysName",
+          "value": "\"BUTTON_ADD\"",
+          "excluded": false
+        },
+        {
+          "name": "DialogName",
+          "value": "\"Настройка уведомления\"",
+          "excluded": false
+        },
+        {
+          "name": "bClose",
+          "value": "true",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1766120945035,
+      "stop": 1766120945949
+    },
+    {
+      "name": "Click on the \"Dialog  -> Body  -> Tab [System Identifier == FORM_MAIL_SETTINGS]\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766120945950,
+      "stop": 1766120946032
+    },
+    {
+      "name": "Click on the \"Dialog  -> Body  -> Tab [System Identifier == FORM_NOTIFICATIONS_HISTORY]\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766120946032,
+      "stop": 1766120946173
+    },
+    {
+      "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == Отмена]\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766120946385,
+      "stop": 1766120946479
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1766120942684,
+  "stop": 1766120946645
+}

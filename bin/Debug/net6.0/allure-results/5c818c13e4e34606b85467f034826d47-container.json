@@ -1,0 +1,12 @@
+{
+  "uuid": "ae967f05-2ee4-49c5-add4-0027dc81ec1a",
+  "name": "TDM365.UI.Tests",
+  "children": [
+    "5b170f91-3b82-4079-8138-32a4ce4c0fb3"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1766120946648,
+  "stop": 1766120952381
+}

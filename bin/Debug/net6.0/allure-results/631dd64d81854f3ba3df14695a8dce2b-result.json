@@ -1,0 +1,818 @@
+{
+  "uuid": "c7082c7f-7c00-4406-91cc-f2d67af5adbd",
+  "historyId": "da4d70340f88332c42d155d55d839789",
+  "testCaseId": "5d45e661520b9daed1ed6ebb8837926e",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.PanelTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.PanelTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Панели"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Панели"
+    },
+    {
+      "name": "tag",
+      "value": "Стартовая страница"
+    },
+    {
+      "name": "tag",
+      "value": "Задачи"
+    },
+    {
+      "name": "tag",
+      "value": "Журнал сервера"
+    },
+    {
+      "name": "tag",
+      "value": "Журнал событий"
+    },
+    {
+      "name": "tag",
+      "value": "Журнал уведомлений"
+    },
+    {
+      "name": "tag",
+      "value": "Проекты"
+    },
+    {
+      "name": "tag",
+      "value": "Планирование"
+    },
+    {
+      "name": "tag",
+      "value": "Закрыть панель"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.PanelTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "В разделе панелей открываются все панели и закрываются",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121017203,
+          "stop": 1766121017284
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121017284,
+          "stop": 1766121017326
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121017326,
+          "stop": 1766121017379
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1766121016867,
+      "stop": 1766121017379
+    },
+    {
+      "name": "1. Переход в раздел \"Панели\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Logo Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121017381,
+          "stop": 1766121018072
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Панели\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1766121017380,
+      "stop": 1766121018072
+    },
+    {
+      "name": "2. Команда контекстного меню в панели \"TDM365\" - \"TDM365\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == TDM365]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121019289,
+          "stop": 1766121019438
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1766121018073,
+      "stop": 1766121019438
+    },
+    {
+      "name": "3. Команда контекстного меню в панели \"TDM365\" - \"Оперативная панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Оперативная панель]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121020448,
+          "stop": 1766121020545
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Оперативная панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1766121019438,
+      "stop": 1766121020545
+    },
+    {
+      "name": "4. Команда контекстного меню в панели \"FORM_PANEL_SPD\" - \"Журнал сервера\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Журнал сервера]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121021934,
+          "stop": 1766121022111
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Журнал сервера\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_PANEL_SPD\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "4",
+          "excluded": false
+        }
+      ],
+      "start": 1766121020545,
+      "stop": 1766121022111
+    },
+    {
+      "name": "5. Команда контекстного меню в панели \"FORM_SERVER_LOG\" - \"Журнал событий\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Журнал событий]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121023970,
+          "stop": 1766121024164
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Журнал событий\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_SERVER_LOG\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "5",
+          "excluded": false
+        }
+      ],
+      "start": 1766121022112,
+      "stop": 1766121024164
+    },
+    {
+      "name": "6. Команда контекстного меню в панели \"FORM_EVENTS_LOG\" - \"Журнал уведомлений\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Журнал уведомлений]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121026616,
+          "stop": 1766121026838
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Журнал уведомлений\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_EVENTS_LOG\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "6",
+          "excluded": false
+        }
+      ],
+      "start": 1766121024164,
+      "stop": 1766121026838
+    },
+    {
+      "name": "7. Команда контекстного меню в панели \"FORM_NOTIFICATIONS_HISTORY\" - \"Проекты\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Проекты]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121031136,
+          "stop": 1766121031869
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Проекты\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_NOTIFICATIONS_HISTORY\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "7",
+          "excluded": false
+        }
+      ],
+      "start": 1766121026838,
+      "stop": 1766121031869
+    },
+    {
+      "name": "8. Команда контекстного меню в панели \"FORM_PANEL_PROJECTS\" - \"Планирование\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Планирование]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121037020,
+          "stop": 1766121037848
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Планирование\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_PANEL_PROJECTS\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "8",
+          "excluded": false
+        }
+      ],
+      "start": 1766121031869,
+      "stop": 1766121037848
+    },
+    {
+      "name": "9. Команда контекстного меню в панели \"TDM365\" - \"Закрыть панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Закрыть панель]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121041346,
+          "stop": 1766121042148
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"TDM365\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "9",
+          "excluded": false
+        }
+      ],
+      "start": 1766121037848,
+      "stop": 1766121042148
+    },
+    {
+      "name": "10. Команда контекстного меню в панели \"FORM_PANEL_SPD\" - \"Закрыть панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Закрыть панель]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121043902,
+          "stop": 1766121044588
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_PANEL_SPD\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "10",
+          "excluded": false
+        }
+      ],
+      "start": 1766121042149,
+      "stop": 1766121044588
+    },
+    {
+      "name": "11. Команда контекстного меню в панели \"FORM_SERVER_LOG\" - \"Закрыть панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Закрыть панель]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121046595,
+          "stop": 1766121047338
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_SERVER_LOG\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "11",
+          "excluded": false
+        }
+      ],
+      "start": 1766121044589,
+      "stop": 1766121047338
+    },
+    {
+      "name": "12. Команда контекстного меню в панели \"FORM_EVENTS_LOG\" - \"Закрыть панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Закрыть панель]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121049049,
+          "stop": 1766121049205
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_EVENTS_LOG\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "12",
+          "excluded": false
+        }
+      ],
+      "start": 1766121047338,
+      "stop": 1766121049205
+    },
+    {
+      "name": "13. Команда контекстного меню в панели \"FORM_NOTIFICATIONS_HISTORY\" - \"Закрыть панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Закрыть панель]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766121051179,
+          "stop": 1766121051319
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_NOTIFICATIONS_HISTORY\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "13",
+          "excluded": false
+        }
+      ],
+      "start": 1766121049205,
+      "stop": 1766121051319
+    },
+    {
+      "name": "14. Команда контекстного меню в панели \"FORM_PANEL_PROJECTS\" - \"Закрыть панель\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Command",
+          "value": "\"Закрыть панель\"",
+          "excluded": false
+        },
+        {
+          "name": "PanelName",
+          "value": "\"FORM_PANEL_PROJECTS\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "14",
+          "excluded": false
+        }
+      ],
+      "start": 1766121051319,
+      "stop": 1766121052470
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1766121016839,
+  "stop": 1766121052698
+}

@@ -1,0 +1,932 @@
+{
+  "uuid": "c71b9a86-617c-42f3-bfa0-037e775d6062",
+  "historyId": "636cd405884d8c9bb503b3b99776fa3d",
+  "testCaseId": "e8fe9e55ff1f8f8c1e01c6d5f3da64a7",
+  "fullName": "TDM365_TESTS_UI:TDM365.UI.Tests.ObjDevCreateTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "TECNOBOOK"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "xUnit.net"
+    },
+    {
+      "name": "testClass",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TDM365.UI.Tests.ObjDevCreateTest"
+    },
+    {
+      "name": "package",
+      "value": "TDM365.UI.Tests"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Web interface TDM365"
+    },
+    {
+      "name": "feature",
+      "value": "Авторизация"
+    },
+    {
+      "name": "feature",
+      "value": "Объекты"
+    },
+    {
+      "name": "owner",
+      "value": "Чернышов Дмитрий"
+    },
+    {
+      "name": "tag",
+      "value": "Авторизация"
+    },
+    {
+      "name": "tag",
+      "value": "Объекты"
+    },
+    {
+      "name": "tag",
+      "value": "Объект разработки"
+    },
+    {
+      "name": "tag",
+      "value": "Проект"
+    }
+  ],
+  "links": [],
+  "name": "TDM365.UI.Tests.ObjDevCreateTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "description": "Создание структуры Объекта разработки",
+  "steps": [
+    {
+      "name": "0. Авторизация пользователя \"SYSADMIN\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Send \"SYSADMIN\" keys to the \"Поле \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120901693,
+          "stop": 1766120901763
+        },
+        {
+          "name": "Send \"Tdm365\" keys to the \"Поле[1] \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120901763,
+          "stop": 1766120901806
+        },
+        {
+          "name": "Click on the \"Кнопка \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120901806,
+          "stop": 1766120901860
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "UserName",
+          "value": "\"SYSADMIN\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "0",
+          "excluded": false
+        }
+      ],
+      "start": 1766120901295,
+      "stop": 1766120901860
+    },
+    {
+      "name": "1. Переход в раздел \"Объекты\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Click on the \"Application  -> Header [Is displayed == True] -> Objects Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120901863,
+          "stop": 1766120902590
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "Section",
+          "value": "\"Объекты\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "1",
+          "excluded": false
+        }
+      ],
+      "start": 1766120901861,
+      "stop": 1766120902590
+    },
+    {
+      "name": "2. Создание Объекта разработки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Context click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == TDM365] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120902598,
+          "stop": 1766120903140
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Создать объект разработки]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120903141,
+          "stop": 1766120903258
+        },
+        {
+          "name": "Send \"xunit\" keys to the \"Dialog  -> Body  -> Input Component [System Identifier == ATTR_OCC_CODE] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120903260,
+          "stop": 1766120903691
+        },
+        {
+          "name": "Send \"19.12.2025 10:08:22 Автотестовый объект\" keys to the \"Dialog  -> Body  -> Text Area Component [System Identifier == ATTR_OCC_NAME] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120903692,
+          "stop": 1766120903839
+        },
+        {
+          "name": "Send \"Создано автотестом\" keys to the \"Dialog  -> Body  -> Text Area Component [System Identifier == ATTR_DESCRIPTION] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120903839,
+          "stop": 1766120903947
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120903948,
+          "stop": 1766120904028
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "index",
+          "value": "2",
+          "excluded": false
+        }
+      ],
+      "start": 1766120902591,
+      "stop": 1766120904028
+    },
+    {
+      "name": "3. Проверка Объекта разработки",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Double click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == TDM365] -> Tree View Item [Has Text == True] AND [Text == xunit 19.12.2025 10:08:22 Автотестовый объект] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120904767,
+          "stop": 1766120905208
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "sObjDev",
+          "value": "\"xunit 19.12.2025 10:08:22 Автотестовый объект\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "3",
+          "excluded": false
+        }
+      ],
+      "start": 1766120904028,
+      "stop": 1766120906421
+    },
+    {
+      "name": "4. Создание Проекта",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Context click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == xunit 19.12.2025 10:08:22 Автотестовый объект] -> Tree View Item [Has Text == True] AND [Text == Проекты] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120906423,
+          "stop": 1766120906911
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Создать проект]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120906911,
+          "stop": 1766120907121
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Tab [Has Text == True] AND [Text == Проект]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907122,
+          "stop": 1766120907424
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Tab [Has Text == True] AND [Text == Проект]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907456,
+          "stop": 1766120907520
+        },
+        {
+          "name": "Send \"639017357064237059\" keys to the \"Dialog  -> Body  -> Input Component [System Identifier == ATTR_Project_Code] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907520,
+          "stop": 1766120907614
+        },
+        {
+          "name": "Send \"Автотестовый проект\" keys to the \"Dialog  -> Body  -> Input Component [System Identifier == ATTR_Project_Name] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907614,
+          "stop": 1766120907741
+        },
+        {
+          "name": "Send \"Создано автотестом\" keys to the \"Dialog  -> Body  -> Text Area Component [System Identifier == ATTR_Project_Full_Name] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907742,
+          "stop": 1766120907847
+        },
+        {
+          "name": "Send \"19.12.2025 10:08:26\" keys to the \"Dialog  -> Body  -> Input Component [System Identifier == ATTR_PROJECT_DATE_FINISH_PLAN] -> Input \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907847,
+          "stop": 1766120907984
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Button [Data Reference == BUTTON_ROLES_SET]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120907985,
+          "stop": 1766120908060
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Button [Data Reference == BUTTON_ROLES_SET]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120908060,
+          "stop": 1766120908134
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Определение] -> Body  -> Button [Data Reference == BUTTON_PROJECT_TEAM]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120908502,
+          "stop": 1766120908588
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Body  -> Table  -> Table Cell [Has Text == True] AND [Text == Все пользователи]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120909121,
+          "stop": 1766120909291
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120909291,
+          "stop": 1766120909397
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Определение] -> Body  -> Button [Data Reference == BUTTON_PROJECT_CHECKING]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120909397,
+          "stop": 1766120909497
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Body  -> Table  -> Table Cell [Has Text == True] AND [Text == Все пользователи]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120910013,
+          "stop": 1766120910183
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120910183,
+          "stop": 1766120910292
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Определение] -> Body  -> Button [Data Reference == BUTTON_PROJECT_CREATING]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120910292,
+          "stop": 1766120910416
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Body  -> Table  -> Table Cell [Has Text == True] AND [Text == Все пользователи]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120910908,
+          "stop": 1766120911071
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120911071,
+          "stop": 1766120911175
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Определение] -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120911175,
+          "stop": 1766120911282
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Tab [Has Text == True] AND [Text == Регламент]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120911387,
+          "stop": 1766120911482
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Tab [Has Text == True] AND [Text == Регламент]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120911532,
+          "stop": 1766120911638
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Button [Data Reference == BUTTON_PROD_CALENDAR]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120911638,
+          "stop": 1766120911729
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Body  -> Table  -> Table Cell [Has Text == True] AND [Text == календарь]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120912139,
+          "stop": 1766120912236
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == Выбор] -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120912236,
+          "stop": 1766120912328
+        },
+        {
+          "name": "Click on the \"Dialog  -> Footer  -> Button [Has Text == True] AND [Text == OK]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120912437,
+          "stop": 1766120912496
+        },
+        {
+          "name": "Double click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == xunit 19.12.2025 10:08:22 Автотестовый объект] -> Tree View Item [Has Text == True] AND [Text == Проекты] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120912496,
+          "stop": 1766120913012
+        },
+        {
+          "name": "Double click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == xunit 19.12.2025 10:08:22 Автотестовый объект] -> Tree View Item [Has Text == True] AND [Text == Проекты] -> Tree View Item [Has Text == True] AND [Text == 639017357064237059 Автотестовый проект] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120913239,
+          "stop": 1766120913738
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "sObjDev",
+          "value": "\"xunit 19.12.2025 10:08:22 Автотестовый объект\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "4",
+          "excluded": false
+        }
+      ],
+      "start": 1766120906422,
+      "stop": 1766120913739
+    },
+    {
+      "name": "5. Запуск Проекта",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Context click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == 639017357064237059 Автотестовый проект] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120914081,
+          "stop": 1766120914567
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Просмотреть]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120914567,
+          "stop": 1766120914669
+        },
+        {
+          "name": "Click on the \"Dialog  -> Body  -> Tab [Has Text == True] AND [Text == Проект]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120914689,
+          "stop": 1766120914818
+        },
+        {
+          "name": "Click on the \"Dialog  -> Header  -> Close Button \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120914889,
+          "stop": 1766120914949
+        },
+        {
+          "name": "Context click on the \"Application  -> Tree View [Is displayed == True] -> Tree View Item [Has Text == True] AND [Text == 639017357064237059 Автотестовый проект] -> Text \"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120914949,
+          "stop": 1766120915531
+        },
+        {
+          "name": "Click on the \"Context Menu  -> Context Menu Item [Has Text == True] AND [Text == Начать выполнение]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120915531,
+          "stop": 1766120915653
+        },
+        {
+          "name": "Click on the \"Dialog [Has Text == True] AND [Text == TDM365] -> Footer  -> Button [Has Text == True] AND [Text == Да]\"",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766120915701,
+          "stop": 1766120915777
+        }
+      ],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "sProject",
+          "value": "\"639017357064237059 Автотестовый проект\"",
+          "excluded": false
+        },
+        {
+          "name": "index",
+          "value": "5",
+          "excluded": false
+        }
+      ],
+      "start": 1766120913739,
+      "stop": 1766120917363
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1766120901295,
+  "stop": 1766120917518
+}

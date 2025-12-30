@@ -784,7 +784,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             GoToSection("Панели", 1);
             //Открытие панелей
             PanelCommand("TDM365", "TDM365", 2);
-            PanelCommand("Задачи", "TDM365", 3);
+            PanelCommand("Оперативная панель", "TDM365", 3);
             PanelCommand("Журнал сервера", "FORM_PANEL_SPD", 4);
             PanelCommand("Журнал событий", "FORM_SERVER_LOG", 5);
             PanelCommand("Журнал уведомлений", "FORM_EVENTS_LOG", 6);
