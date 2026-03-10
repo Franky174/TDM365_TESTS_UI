@@ -18,7 +18,7 @@ namespace Tdms.Automatic.Ui.Tests
 
         protected IWebDriver Driver => Context.Driver;
 
-        protected virtual Uri PageAddress => new("http://localhost/client/");
+        protected virtual Uri PageAddress => new("http://localhost:82/client/");
 
         protected BaseTest()
         {

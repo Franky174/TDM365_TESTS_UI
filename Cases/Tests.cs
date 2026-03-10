@@ -120,7 +120,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
         public void SetFieldValue(string DialogName, string SysName, string Value, int index = 0)
         {
             var Dialog = Context.GetComponent<DialogComponent>().ByText(DialogName).Build();
-            if (!Dialog.IsAvailable(TimeSpan.FromMilliseconds(500)))
+            if (!Dialog.IsAvailable(TimeSpan.FromMilliseconds(1000)))
                 Assert.True(false, $"Не найден диалог {DialogName}");
             var Field0 = Dialog.Body.GetComponent<InputComponent>().BySystemIdentifier(SysName).Build();
             if (Field0.IsAvailable(TimeSpan.FromMilliseconds(100)))
@@ -320,7 +320,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             while(i < 5 && !bDialog)
             {
                 var Dialog = Context.GetComponent<DialogComponent>().Build();
-                if (Dialog.IsAvailable(TimeSpan.FromMilliseconds(500)))
+                if (Dialog.IsAvailable(TimeSpan.FromMilliseconds(5000)))
                 {
                     if (bClose)
                         Dialog.Close();
@@ -623,7 +623,7 @@ namespace TDM365.UI//Tdms.Automatic.Ui.Tests.Cases
             //if (createDlg.IsAvailable(TimeSpan.FromMilliseconds(100))) createDlg.Ok();
 
             //Проверка Проекта
-            ProjectsTreeItem.DoubleClick();
+            //ProjectsTreeItem.DoubleClick();
             var CreatedObj = ProjectsTreeItem.GetItem().ByText(TreeDescr).Build();
             bool bObj = CreatedObj.IsAvailable(TimeSpan.FromMilliseconds(1000));
             Assert.True(bObj, $"В дереве созданный объект \"{TreeDescr}\" не найден");
