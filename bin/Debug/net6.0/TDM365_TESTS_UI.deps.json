@@ -11,7 +11,7 @@
           "Allure.Xunit": "2.12.1",
           "Microsoft.NET.Test.Sdk": "17.13.0",
           "Selenium.WebDriver": "4.33.0",
-          "Tdms.Ui.Test.Components": "7.0.214",
+          "Tdms.Ui.Test.Components": "7.0.218",
           "coverlet.collector": "6.0.4",
           "xunit": "2.9.3",
           "xunit.runner.visualstudio": "2.8.2"
@@ -1042,19 +1042,19 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Tdms.Ui.Test.Components/7.0.214": {
+      "Tdms.Ui.Test.Components/7.0.218": {
         "runtime": {
           "lib/net6.0/Bismuthum.Allure.dll": {
-            "assemblyVersion": "7.0.214.0",
-            "fileVersion": "7.0.214.0"
+            "assemblyVersion": "7.0.218.0",
+            "fileVersion": "7.0.218.0"
           },
           "lib/net6.0/Bismuthum.Core.dll": {
-            "assemblyVersion": "7.0.214.0",
-            "fileVersion": "7.0.214.0"
+            "assemblyVersion": "7.0.218.0",
+            "fileVersion": "7.0.218.0"
           },
           "lib/net6.0/Tdms.Ui.Test.Components.dll": {
-            "assemblyVersion": "7.0.214.0",
-            "fileVersion": "7.0.214.0"
+            "assemblyVersion": "7.0.218.0",
+            "fileVersion": "7.0.218.0"
           }
         }
       },
@@ -1685,12 +1685,12 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Tdms.Ui.Test.Components/7.0.214": {
+    "Tdms.Ui.Test.Components/7.0.218": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JtgfFPQvHmMhaLBDUwiPyVoFu8GLzvFzrAbXwxIGGuETqInxMa53presXZ2Aept3wxHrC7cT4guBCgowvNzeTg==",
-      "path": "tdms.ui.test.components/7.0.214",
-      "hashPath": "tdms.ui.test.components.7.0.214.nupkg.sha512"
+      "sha512": "sha512-mRz+RQhSoHGWtAzwLNgQ7Ap86Fdvn2CJYgDmafC+jttG4fQ++HNuDlQ1mM9D9VErrxe1lx97vYYwgrUQ+kyQuA==",
+      "path": "tdms.ui.test.components/7.0.218",
+      "hashPath": "tdms.ui.test.components.7.0.218.nupkg.sha512"
     },
     "xunit/2.9.3": {
       "type": "package",
