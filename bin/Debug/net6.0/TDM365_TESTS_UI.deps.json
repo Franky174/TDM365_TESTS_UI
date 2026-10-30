@@ -11,7 +11,7 @@
           "Allure.Xunit": "2.15.0",
           "Microsoft.NET.Test.Sdk": "17.13.0",
           "Selenium.WebDriver": "4.46.0",
-          "Tdms.Ui.Test.Components": "7.0.233",
+          "Tdms.Ui.Test.Components": "7.0.235",
           "coverlet.collector": "6.0.4",
           "xunit": "2.9.3",
           "xunit.runner.visualstudio": "2.8.2"
@@ -433,19 +433,19 @@
           }
         }
       },
-      "Tdms.Ui.Test.Components/7.0.233": {
+      "Tdms.Ui.Test.Components/7.0.235": {
         "runtime": {
           "lib/net6.0/Bismuthum.Allure.dll": {
-            "assemblyVersion": "7.0.233.0",
-            "fileVersion": "7.0.233.0"
+            "assemblyVersion": "7.0.235.0",
+            "fileVersion": "7.0.235.0"
           },
           "lib/net6.0/Bismuthum.Core.dll": {
-            "assemblyVersion": "7.0.233.0",
-            "fileVersion": "7.0.233.0"
+            "assemblyVersion": "7.0.235.0",
+            "fileVersion": "7.0.235.0"
           },
           "lib/net6.0/Tdms.Ui.Test.Components.dll": {
-            "assemblyVersion": "7.0.233.0",
-            "fileVersion": "7.0.233.0"
+            "assemblyVersion": "7.0.235.0",
+            "fileVersion": "7.0.235.0"
           }
         }
       },
@@ -654,12 +654,12 @@
       "path": "system.threading.channels/8.0.0",
       "hashPath": "system.threading.channels.8.0.0.nupkg.sha512"
     },
-    "Tdms.Ui.Test.Components/7.0.233": {
+    "Tdms.Ui.Test.Components/7.0.235": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JzkO/QgoiNwaYKfHPg17ZzHm8mvuZwFXuf4sbPooCPyhsg4BIvg9OMxD+mA4ZCNWWY1sS4h8v3ksRC16LJGobg==",
-      "path": "tdms.ui.test.components/7.0.233",
-      "hashPath": "tdms.ui.test.components.7.0.233.nupkg.sha512"
+      "sha512": "sha512-lC1krhitRFuG13uWU1u87ZspWe1uCawg19A9WbdqdTgtB3XVJP/7e9wQA1mJTF1ZCP0yN/2FdVrAL/o7xyEe1A==",
+      "path": "tdms.ui.test.components/7.0.235",
+      "hashPath": "tdms.ui.test.components.7.0.235.nupkg.sha512"
     },
     "xunit/2.9.3": {
       "type": "package",
